@@ -223,7 +223,7 @@ def main():
     print("Starting Express Tribune scraper...")
     print()
 
-    articles = get_articles(limit=20)
+    articles = get_articles(limit=30)
 
     print()
     print("Found", len(articles), "articles")

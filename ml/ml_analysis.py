@@ -252,11 +252,9 @@ def calculate_trends(df, clusters_df):
 
     dated["day"] = dated["date"].dt.floor("D")
 
-    counts = (
-        dated.groupby(["day", "cluster_id", "cluster_label"])
+    counts = (dated.groupby(["day", "cluster_id", "cluster_label"])
         .size()
-        .reset_index(name="article_count")
-    )
+        .reset_index(name="article_count"))
 
     # Create every cluster/day combination so days with zero articles are included
     all_days = pd.date_range(dated["day"].min(), dated["day"].max(), freq="D", tz="UTC")
@@ -294,9 +292,7 @@ def calculate_trends(df, clusters_df):
     return trends
 
 
-def detect_emerging_topics(
-    trends, recent_active_days=3, baseline_active_days=7, min_recent=4
-):
+def detect_emerging_topics(trends, recent_active_days=3, baseline_active_days=7, min_recent=4):
     print("\nDetecting emerging topic signals...")
 
     if trends.empty:

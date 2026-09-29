@@ -199,7 +199,7 @@ def main():
 
     get_soup(BASE_URL + "/")
 
-    links = get_article_links(limit=20)
+    links = get_article_links(limit=30)
 
     print()
     print("Found", len(links), "articles")
