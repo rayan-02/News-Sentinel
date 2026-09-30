@@ -1,0 +1,171 @@
+{
+  "stats": {
+    "articles": 666,
+    "topics": 8,
+    "emerging": 1,
+    "sources": 4
+  },
+  "date_range": {
+    "from": "2026-03-24",
+    "to": "2026-09-30"
+  },
+  "topic_sizes": [
+    {
+      "cluster_id": 5,
+      "cluster_label": "human, woman, right",
+      "article_count": 98
+    },
+    {
+      "cluster_id": 4,
+      "cluster_label": "game, match, cup",
+      "article_count": 94
+    },
+    {
+      "cluster_id": 2,
+      "cluster_label": "price, rupee, oil",
+      "article_count": 89
+    },
+    {
+      "cluster_id": 7,
+      "cluster_label": "tax, fbr, meeting",
+      "article_count": 85
+    },
+    {
+      "cluster_id": 0,
+      "cluster_label": "police, terrorist, killed",
+      "article_count": 83
+    },
+    {
+      "cluster_id": 1,
+      "cluster_label": "pti, province, punjab",
+      "article_count": 81
+    },
+    {
+      "cluster_id": 3,
+      "cluster_label": "iran, saudi, iranian",
+      "article_count": 80
+    },
+    {
+      "cluster_id": 6,
+      "cluster_label": "police, suspect, case",
+      "article_count": 56
+    }
+  ],
+  "sentiment_counts": {
+    "Positive": 349,
+    "Negative": 314,
+    "Neutral": 3
+  },
+  "articles_per_source": [
+    {
+      "source": "Business Recorder",
+      "articles": 199
+    },
+    {
+      "source": "Express Tribune",
+      "articles": 177
+    },
+    {
+      "source": "Geo News",
+      "articles": 154
+    },
+    {
+      "source": "Dawn",
+      "articles": 136
+    }
+  ],
+  "top_trends": [
+    {
+      "cluster_id": 2,
+      "cluster_label": "price, rupee, oil",
+      "article_count": 15,
+      "rolling_3d": 12.33,
+      "rolling_7d": 6.0
+    },
+    {
+      "cluster_id": 7,
+      "cluster_label": "tax, fbr, meeting",
+      "article_count": 11,
+      "rolling_3d": 9.67,
+      "rolling_7d": 5.29
+    },
+    {
+      "cluster_id": 6,
+      "cluster_label": "police, suspect, case",
+      "article_count": 6,
+      "rolling_3d": 5.0,
+      "rolling_7d": 2.57
+    },
+    {
+      "cluster_id": 3,
+      "cluster_label": "iran, saudi, iranian",
+      "article_count": 8,
+      "rolling_3d": 4.67,
+      "rolling_7d": 3.0
+    },
+    {
+      "cluster_id": 1,
+      "cluster_label": "pti, province, punjab",
+      "article_count": 5,
+      "rolling_3d": 4.0,
+      "rolling_7d": 2.71
+    }
+  ],
+  "emerging_topics": [
+    {
+      "cluster_id": 2,
+      "cluster_label": "price, rupee, oil",
+      "share_lift": 3.003,
+      "recent_articles": 37,
+      "baseline_articles": 5,
+      "recent_share": 0.2681
+    }
+  ],
+  "recent_cross_source_pairs": [
+    {
+      "similarity": 0.9753,
+      "source_i": "Dawn",
+      "source_j": "Business Recorder",
+      "title_i": "Modi speaks with Trump as India seeks interim deal with US",
+      "title_j": "Modi speaks with Trump as India seeks interim deal with US",
+      "url_i": "https://www.dawn.com/news/2033785/modi-speaks-with-trump-as-india-seeks-interim-deal-with-us",
+      "url_j": "https://www.brecorder.com/news/40442010/modi-speaks-with-trump-as-india-seeks-interim-deal-with-us"
+    },
+    {
+      "similarity": 0.9745,
+      "source_i": "Dawn",
+      "source_j": "Business Recorder",
+      "title_i": "FBR extends deadline for filing income tax returns to Oct 15",
+      "title_j": "FBR extends tax return filing deadline to October 15",
+      "url_i": "https://www.dawn.com/news/2033760/fbr-extends-deadline-for-filing-income-tax-returns-to-oct-15",
+      "url_j": "https://www.brecorder.com/news/40442017/fbr-extends-tax-return-filing-deadline-to-october-15"
+    },
+    {
+      "similarity": 0.9722,
+      "source_i": "Dawn",
+      "source_j": "Business Recorder",
+      "title_i": "Pakistan will be there to defend Saudi Arabia in any conflict: Khawaja Asif",
+      "title_j": "Pakistan will defend Saudi Arabia in any conflict, says Khawaja Asif",
+      "url_i": "https://www.dawn.com/news/2033772/pakistan-will-be-there-to-defend-saudi-arabia-in-any-conflict-khawaja-asif",
+      "url_j": "https://www.brecorder.com/news/40442016/pakistan-will-defend-saudi-arabia-in-any-conflict-says-khawaja-asif"
+    },
+    {
+      "similarity": 0.9518,
+      "source_i": "Dawn",
+      "source_j": "Business Recorder",
+      "title_i": "Tel Aviv-bound Flydubai flight diverted to Saudi Arabia after brawl between pilots: Israeli official",
+      "title_j": "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says",
+      "url_i": "https://www.dawn.com/news/2033728/tel-aviv-bound-flydubai-flight-diverted-to-saudi-arabia-after-brawl-between-pilots-israeli-official",
+      "url_j": "https://www.brecorder.com/news/40441972/israel-bound-flight-diverted-to-saudi-arabia-after-brawl-between-pilots-israeli-official-says"
+    },
+    {
+      "similarity": 0.9462,
+      "source_i": "Dawn",
+      "source_j": "Express Tribune",
+      "title_i": "3 terrorists killed in IBO in KP's Mir Ali: state media",
+      "title_j": "Security forces kill three terrorists in Mir Ali operation: state media",
+      "url_i": "https://www.dawn.com/news/2033708/3-terrorists-killed-in-ibo-in-kps-mir-ali-state-media",
+      "url_j": "https://tribune.com.pk/story/2632212/security-forces-kill-three-terrorists-in-mir-ali-operation-state-media"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="sources-error" class="error" hidden></div>
+
+<div class="page-intro">
+    <div>
+        <p class="eyebrow">SOURCE ANALYSIS</p>
+        <h2>Source Analysis</h2>
+        <p>
+            Compare measurable differences in coverage, sentiment and topic emphasis
+            across news outlets.
+        </p>
+    </div>
+</div>
+
+<section class="notice" id="source-disclaimer">
+    Loading analysis note...
+</section>
+
+<section class="stats" id="source-stats">
+    <div class="stat">
+        <span class="stat-label">Sources</span>
+        <span class="stat-value">—</span>
+        <span class="stat-description">News outlets analyzed</span>
+    </div>
+
+    <div class="stat">
+        <span class="stat-label">Topics</span>
+        <span class="stat-value">—</span>
+        <span class="stat-description">Topics compared</span>
+    </div>
+
+    <div class="stat">
+        <span class="stat-label">Articles</span>
+        <span class="stat-value">—</span>
+        <span class="stat-description">Articles analyzed</span>
+    </div>
+</section>
+
+<section class="card">
+    <div class="card-header">
+        <h2 class="card-title">Sources</h2>
+        <span class="card-meta">Article volume and sentiment</span>
+    </div>
+
+    <div id="source-summary">
+        <div class="empty">Loading source data...</div>
+    </div>
+</section>
+
+<section class="card">
+    <div class="card-header">
+        <h2 class="card-title">Topic-Level Analysis</h2>
+        <span class="card-meta">Coverage and sentiment differences</span>
+    </div>
+
+    <div id="source-topics">
+        <div class="empty">Loading topic analysis...</div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/sources.js') }}"></script>
+{% endblock %}

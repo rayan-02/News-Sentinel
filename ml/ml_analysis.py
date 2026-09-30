@@ -309,7 +309,7 @@ def distinctive_terms(source_values, other_values, n=SOURCE_TOP_TERMS):
         if lift > 1:
             rows.append((term, lift, count))
 
-    rows.sort(key=lambda x: (x[1], x[2]), reverse=True)
+    rows.sort(key=lambda x: (-x[1], -x[2], x[0]))  # term as last tie-break keeps results reproducible
     return [term for term, _, _ in rows[:n]]
 
 

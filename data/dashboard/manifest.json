@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-09-30T19:31:01+00:00",
+  "stats": {
+    "articles": 666,
+    "topics": 8,
+    "emerging": 1,
+    "sources": 4
+  },
+  "files": [
+    "overview.json",
+    "topics.json",
+    "trends.json",
+    "similar_stories.json",
+    "source_analysis.json",
+    "articles.json"
+  ],
+  "warnings": []
+}

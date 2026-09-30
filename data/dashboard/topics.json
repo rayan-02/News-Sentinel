@@ -1,0 +1,444 @@
+{
+  "topics": [
+    {
+      "cluster_id": 5,
+      "label": "human, woman, right",
+      "article_count": 98,
+      "share_of_articles": 0.1471,
+      "keywords": [
+        "human",
+        "woman",
+        "right",
+        "company",
+        "agent",
+        "school",
+        "trump",
+        "india"
+      ],
+      "phrases": [
+        "social medium",
+        "post instagram",
+        "request comment",
+        "year old",
+        "view post instagram"
+      ],
+      "avg_sentiment": 0.2286,
+      "sentiment_counts": {
+        "Positive": 61,
+        "Negative": 37,
+        "Neutral": 0
+      },
+      "sources": {
+        "Express Tribune": 42,
+        "Geo News": 27,
+        "Business Recorder": 23,
+        "Dawn": 6
+      },
+      "sample_articles": [
+        {
+          "title": "Prince Harry's children targeted by 'European paparazzi' while at school in England",
+          "url": "https://www.brecorder.com/news/40441997/prince-harrys-children-targeted-by-european-paparazzi-while-at-school-in-england",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Apple plans to launch new smart-home hub on Oct 13, reports",
+          "url": "https://www.brecorder.com/news/40441994/apple-plans-to-launch-new-smart-home-hub-on-oct-13-reports",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Would-be Taylor Swift concert attacker loses privacy case against Disney",
+          "url": "https://www.brecorder.com/news/40441990/would-be-taylor-swift-concert-attacker-loses-privacy-case-against-disney",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "label": "game, match, cup",
+      "article_count": 94,
+      "share_of_articles": 0.1411,
+      "keywords": [
+        "game",
+        "match",
+        "cup",
+        "final",
+        "team",
+        "player",
+        "asian game",
+        "england"
+      ],
+      "phrases": [
+        "world cup",
+        "asian game",
+        "semi final",
+        "quarter final",
+        "nation league"
+      ],
+      "avg_sentiment": 0.5727,
+      "sentiment_counts": {
+        "Positive": 75,
+        "Negative": 19,
+        "Neutral": 0
+      },
+      "sources": {
+        "Express Tribune": 49,
+        "Geo News": 22,
+        "Business Recorder": 19,
+        "Dawn": 4
+      },
+      "sample_articles": [
+        {
+          "title": "Lamine nets double as Spain win again and England beat 10-man Czechs",
+          "url": "https://www.brecorder.com/news/40441978/lamine-nets-double-as-spain-win-again-and-england-beat-10-man-czechs",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "South Africa look to gather momentum in ODI series with World Cup looming",
+          "url": "https://www.brecorder.com/news/40441977/south-africa-look-to-gather-momentum-in-odi-series-with-world-cup-looming",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Pakistan clinch eSports bronze at Asian Games",
+          "url": "https://www.brecorder.com/news/40441801/pakistan-clinch-esports-bronze-at-asian-games",
+          "source": "Business Recorder",
+          "date": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "label": "price, rupee, oil",
+      "article_count": 89,
+      "share_of_articles": 0.1336,
+      "keywords": [
+        "price",
+        "rupee",
+        "oil",
+        "bank",
+        "dollar",
+        "per",
+        "market",
+        "india"
+      ],
+      "phrases": [
+        "oil price",
+        "central bank",
+        "per tola",
+        "per litre",
+        "indian rupee"
+      ],
+      "avg_sentiment": 0.2022,
+      "sentiment_counts": {
+        "Positive": 57,
+        "Negative": 32,
+        "Neutral": 0
+      },
+      "sources": {
+        "Business Recorder": 71,
+        "Express Tribune": 8,
+        "Geo News": 6,
+        "Dawn": 4
+      },
+      "sample_articles": [
+        {
+          "title": "Govt reduces petrol price by Re0.14 per litre, high-speed diesel rate by Rs1.89",
+          "url": "https://www.dawn.com/news/2033780/govt-reduces-petrol-price-by-re014-per-litre-high-speed-diesel-rate-by-rs189",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Indian rupee lingers around bottom of Asia FX pile as global headwinds deepen",
+          "url": "https://www.brecorder.com/news/40441983/indian-rupee-lingers-around-bottom-of-asia-fx-pile-as-global-headwinds-deepen",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "State Bank of India buys nearly 40% of Reliance's $1.35 billion debt sale",
+          "url": "https://www.brecorder.com/news/40441995/state-bank-of-india-buys-nearly-40-of-reliances-135-billion-debt-sale",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "label": "tax, fbr, meeting",
+      "article_count": 85,
+      "share_of_articles": 0.1276,
+      "keywords": [
+        "tax",
+        "fbr",
+        "meeting",
+        "sco",
+        "deadline",
+        "shehbaz",
+        "prime minister",
+        "investment"
+      ],
+      "phrases": [
+        "prime minister",
+        "tax return",
+        "income tax",
+        "september 2026",
+        "income tax return"
+      ],
+      "avg_sentiment": 0.648,
+      "sentiment_counts": {
+        "Positive": 73,
+        "Negative": 12,
+        "Neutral": 0
+      },
+      "sources": {
+        "Business Recorder": 40,
+        "Geo News": 18,
+        "Dawn": 15,
+        "Express Tribune": 12
+      },
+      "sample_articles": [
+        {
+          "title": "Govt defends decision to buy 45 bulletproof vehicles for SCO moot, says available 2016 models 'far below' standards",
+          "url": "https://www.dawn.com/news/2033788/govt-defends-decision-to-buy-45-bulletproof-vehicles-for-sco-moot-says-available-2016-models-far-below-standards",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "At CAREC meet Pakistan proposes AI-led digitalisation of border processes",
+          "url": "https://www.brecorder.com/news/40441982/at-carec-meet-pakistan-proposes-ai-led-digitalisation-of-border-processes",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "FBR extends deadline for filing income tax returns to Oct 15",
+          "url": "https://www.dawn.com/news/2033760/fbr-extends-deadline-for-filing-income-tax-returns-to-oct-15",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "label": "police, terrorist, killed",
+      "article_count": 83,
+      "share_of_articles": 0.1246,
+      "keywords": [
+        "police",
+        "terrorist",
+        "killed",
+        "crew",
+        "pakistani",
+        "operation",
+        "israeli",
+        "force"
+      ],
+      "phrases": [
+        "crew member",
+        "rescue 1122",
+        "security force",
+        "saudi arabia",
+        "terrorist killed"
+      ],
+      "avg_sentiment": -0.6938,
+      "sentiment_counts": {
+        "Positive": 11,
+        "Negative": 72,
+        "Neutral": 0
+      },
+      "sources": {
+        "Express Tribune": 27,
+        "Dawn": 26,
+        "Geo News": 17,
+        "Business Recorder": 13
+      },
+      "sample_articles": [
+        {
+          "title": "3 Pakistanis among 5 crew lost during operation to recover ship hijacked by Somali pirates, FO confirms",
+          "url": "https://www.dawn.com/news/2033759/3-pakistanis-among-5-crew-lost-during-operation-to-recover-ship-hijacked-by-somali-pirates-fo-confirms",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Tel Aviv-bound Flydubai flight diverted to Saudi Arabia after brawl between pilots: Israeli official",
+          "url": "https://www.dawn.com/news/2033728/tel-aviv-bound-flydubai-flight-diverted-to-saudi-arabia-after-brawl-between-pilots-israeli-official",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Israel-bound plane rerouted to Saudi Arabia; pilots wounded in reported fight",
+          "url": "https://www.dawn.com/news/2033728/israel-bound-plane-rerouted-to-saudi-arabia-pilots-wounded-in-reported-fight",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "label": "pti, province, punjab",
+      "article_count": 81,
+      "share_of_articles": 0.1216,
+      "keywords": [
+        "pti",
+        "province",
+        "punjab",
+        "party",
+        "afridi",
+        "government",
+        "tarar",
+        "india"
+      ],
+      "phrases": [
+        "chief minister",
+        "federal government",
+        "provincial government",
+        "long march",
+        "new province"
+      ],
+      "avg_sentiment": 0.0546,
+      "sentiment_counts": {
+        "Positive": 41,
+        "Negative": 39,
+        "Neutral": 1
+      },
+      "sources": {
+        "Dawn": 31,
+        "Geo News": 28,
+        "Express Tribune": 14,
+        "Business Recorder": 8
+      },
+      "sample_articles": [
+        {
+          "title": "Minister says federal govt 'seriously considering' imposition of emergency in KP",
+          "url": "https://www.dawn.com/news/2033784/minister-says-federal-govt-seriously-considering-imposition-of-emergency-in-kp",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Tarar warns India's unilateral actions on IWT may have implications for water governance globally",
+          "url": "https://www.dawn.com/news/2033713/tarar-warns-indias-unilateral-actions-on-iwt-may-have-implications-for-water-governance-globally",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Ban on outdoor drones in Punjab extended for a month",
+          "url": "https://www.dawn.com/news/2033604/ban-on-outdoor-drones-in-punjab-extended-for-a-month",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "label": "iran, saudi, iranian",
+      "article_count": 80,
+      "share_of_articles": 0.1201,
+      "keywords": [
+        "iran",
+        "saudi",
+        "iranian",
+        "saudi arabia",
+        "arabia",
+        "trump",
+        "strait",
+        "oil"
+      ],
+      "phrases": [
+        "saudi arabia",
+        "strait hormuz",
+        "united state",
+        "middle east",
+        "nuclear programme"
+      ],
+      "avg_sentiment": -0.3445,
+      "sentiment_counts": {
+        "Positive": 25,
+        "Negative": 53,
+        "Neutral": 2
+      },
+      "sources": {
+        "Business Recorder": 22,
+        "Dawn": 21,
+        "Geo News": 21,
+        "Express Tribune": 16
+      },
+      "sample_articles": [
+        {
+          "title": "Modi speaks with Trump as India seeks interim deal with US",
+          "url": "https://www.dawn.com/news/2033785/modi-speaks-with-trump-as-india-seeks-interim-deal-with-us",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Pakistan will be there to defend Saudi Arabia in any conflict: Khawaja Asif",
+          "url": "https://www.dawn.com/news/2033772/pakistan-will-be-there-to-defend-saudi-arabia-in-any-conflict-khawaja-asif",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Iran says it receives US response to latest proposal as Washington pulls out of Iraq",
+          "url": "https://www.brecorder.com/news/40441992/iran-says-it-receives-us-response-to-latest-proposal-as-washington-pulls-out-of-iraq",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "label": "police, suspect, case",
+      "article_count": 56,
+      "share_of_articles": 0.0841,
+      "keywords": [
+        "police",
+        "suspect",
+        "case",
+        "woman",
+        "lahore",
+        "remand",
+        "court",
+        "rape"
+      ],
+      "phrases": [
+        "physical remand",
+        "pti leader",
+        "mobile phone",
+        "police station",
+        "azeri woman"
+      ],
+      "avg_sentiment": -0.7781,
+      "sentiment_counts": {
+        "Positive": 6,
+        "Negative": 50,
+        "Neutral": 0
+      },
+      "sources": {
+        "Dawn": 29,
+        "Geo News": 15,
+        "Express Tribune": 9,
+        "Business Recorder": 3
+      },
+      "sample_articles": [
+        {
+          "title": "UN experts call for immediate release of Imaan and Hadi, dropping 'unfounded charges' against the couple",
+          "url": "https://www.dawn.com/news/2033782/un-experts-call-for-immediate-release-of-imaan-and-hadi-dropping-unfounded-charges-against-the-couple",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Post-arrest bail plea of PTI leader dismissed",
+          "url": "https://www.dawn.com/news/2033603/post-arrest-bail-plea-of-pti-leader-dismissed",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Man sentenced to death for kidnapping, murdering lawyer",
+          "url": "https://www.dawn.com/news/2033625/man-sentenced-to-death-for-kidnapping-murdering-lawyer",
+          "source": "Dawn",
+          "date": "2026-09-30"
+        }
+      ]
+    }
+  ]
+}

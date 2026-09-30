@@ -1,0 +1,1878 @@
+{
+  "disclaimer": "These are measurable differences in coverage, not a verdict on whether an outlet is biased.",
+  "notes": [
+    "Outlets with very few articles on a topic are left out, so shares may not add up to 100%."
+  ],
+  "sources": [
+    {
+      "source": "Business Recorder",
+      "articles": 199,
+      "avg_sentiment": 0.2366
+    },
+    {
+      "source": "Express Tribune",
+      "articles": 177,
+      "avg_sentiment": 0.1396
+    },
+    {
+      "source": "Geo News",
+      "articles": 154,
+      "avg_sentiment": -0.0823
+    },
+    {
+      "source": "Dawn",
+      "articles": 136,
+      "avg_sentiment": -0.2508
+    }
+  ],
+  "topics": [
+    {
+      "cluster_id": 0,
+      "label": "police, terrorist, killed",
+      "topic_articles": 83,
+      "sources": [
+        {
+          "source": "Express Tribune",
+          "articles": 27,
+          "coverage_share": 0.3253,
+          "emphasis_ratio": 1.224,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.6306,
+          "topic_avg_sentiment": -0.6938,
+          "sentiment_difference": 0.0632,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "fire safety",
+            "safety",
+            "bannu",
+            "firefighting",
+            "pakistan air",
+            "personnel",
+            "area",
+            "1965",
+            "abad",
+            "affected"
+          ],
+          "distinctive_phrases": [
+            "fire safety",
+            "pakistan air",
+            "pakistan air force",
+            "1965 war",
+            "according data",
+            "afghan soil",
+            "could take",
+            "death toll",
+            "eight month",
+            "electric vehicle"
+          ],
+          "same_event_matches": 35,
+          "evidence": [
+            {
+              "title": "Old iron, new drugs: The fight for natural muscle",
+              "url": "https://tribune.com.pk/story/2627922/old-iron-new-drugs-the-fight-for-natural-muscle",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "K-P CM demands armoured personnel carriers from federal govt",
+              "url": "https://tribune.com.pk/story/2631671/k-p-cm-demands-armoured-personnel-carriers-from-federal-govt",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Electric scooter battery fire destroys university bus in Faisalabad",
+              "url": "https://tribune.com.pk/story/2632276/electric-scooter-battery-fire-destroys-university-bus-in-faisalabad",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Dawn",
+          "articles": 26,
+          "coverage_share": 0.3133,
+          "emphasis_ratio": 1.534,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": -0.7641,
+          "topic_avg_sentiment": -0.6938,
+          "sentiment_difference": -0.0703,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "disaster",
+            "ameen",
+            "border",
+            "burn",
+            "child",
+            "food",
+            "glacial",
+            "humanitarian",
+            "maritime",
+            "maritime police"
+          ],
+          "distinctive_phrases": [
+            "told dawn",
+            "6th 2026",
+            "published dawn september",
+            "secure release",
+            "according rescue",
+            "air pollution",
+            "aman mela",
+            "check post",
+            "deputy director",
+            "exchange fire"
+          ],
+          "same_event_matches": 38,
+          "evidence": [
+            {
+              "title": "3 Pakistanis among 5 crew lost during operation to recover ship hijacked by Somali pirates, FO confirms",
+              "url": "https://www.dawn.com/news/2033759/3-pakistanis-among-5-crew-lost-during-operation-to-recover-ship-hijacked-by-somali-pirates-fo-confirms",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Tel Aviv-bound Flydubai flight diverted to Saudi Arabia after brawl between pilots: Israeli official",
+              "url": "https://www.dawn.com/news/2033728/tel-aviv-bound-flydubai-flight-diverted-to-saudi-arabia-after-brawl-between-pilots-israeli-official",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Israel-bound plane rerouted to Saudi Arabia; pilots wounded in reported fight",
+              "url": "https://www.dawn.com/news/2033728/israel-bound-plane-rerouted-to-saudi-arabia-pilots-wounded-in-reported-fight",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 17,
+          "coverage_share": 0.2048,
+          "emphasis_ratio": 0.886,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.702,
+          "topic_avg_sentiment": -0.6938,
+          "sentiment_difference": -0.0082,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "airport",
+            "traffic police",
+            "aboard",
+            "afp",
+            "amazon",
+            "authority",
+            "body",
+            "call",
+            "car",
+            "cargo"
+          ],
+          "distinctive_phrases": [
+            "official said",
+            "police officer",
+            "traffic police",
+            "brought control",
+            "data showed",
+            "department said",
+            "eiffel tower",
+            "flight tracking",
+            "international airport",
+            "ispr said"
+          ],
+          "same_event_matches": 36,
+          "evidence": [
+            {
+              "title": "US aircraft carrier Abraham Lincoln departs Thailand after port call",
+              "url": "https://www.geo.tv/latest/680857-us-aircraft-carrier-abraham-lincoln-departs-thailand-after-port-call",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Three traffic police personnel martyred in Tank gun attack",
+              "url": "https://www.geo.tv/latest/684020-three-traffic-police-personnel-martyred-in-tank-gun-attack",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Dubai-Tel Aviv flight diverted to Saudi Arabia after brawl between pilots: Israeli official",
+              "url": "https://www.geo.tv/latest/684352-dubai-tel-aviv-flight-diversion-was-not-a-hijacking-incident-says-israeli-pms-office",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Business Recorder",
+          "articles": 13,
+          "coverage_share": 0.1566,
+          "emphasis_ratio": 0.524,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": -0.6737,
+          "topic_avg_sentiment": -0.6938,
+          "sentiment_difference": 0.0201,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "least",
+            "town",
+            "170",
+            "africa",
+            "attacked",
+            "bandar",
+            "bandar beyla",
+            "bangkok",
+            "canal",
+            "cape"
+          ],
+          "distinctive_phrases": [
+            "cape town",
+            "day earlier",
+            "iran oman",
+            "israeli airstrike",
+            "killed operation",
+            "killed people",
+            "near air base",
+            "nearby hospital",
+            "nepal flood",
+            "netanyahu said"
+          ],
+          "same_event_matches": 24,
+          "evidence": [
+            {
+              "title": "Three policemen killed in firing on police vehicle in Tank",
+              "url": "https://www.brecorder.com/news/40441608/three-policemen-killed-in-firing-on-police-vehicle-in-tank",
+              "source": "Business Recorder",
+              "date": "2026-09-28"
+            },
+            {
+              "title": "Over 71 terrorists killed in Balochistan operations over 96 hours: ISPR",
+              "url": "https://www.brecorder.com/news/40441460/over-71-terrorists-killed-in-balochistan-operations-over-96-hours-ispr",
+              "source": "Business Recorder",
+              "date": "2026-09-27"
+            },
+            {
+              "title": "Men arrested in major incident at UK air base used by US",
+              "url": "https://www.brecorder.com/news/40441458/men-arrested-in-major-incident-at-uk-air-base-used-by-us",
+              "source": "Business Recorder",
+              "date": "2026-09-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "label": "pti, province, punjab",
+      "topic_articles": 81,
+      "sources": [
+        {
+          "source": "Dawn",
+          "articles": 31,
+          "coverage_share": 0.3827,
+          "emphasis_ratio": 1.874,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": 0.071,
+          "topic_avg_sentiment": 0.0546,
+          "sentiment_difference": 0.0164,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "committee",
+            "kashmiri",
+            "sept",
+            "worker",
+            "144",
+            "across province",
+            "convoy",
+            "dispute",
+            "drone",
+            "indian"
+          ],
+          "distinctive_phrases": [
+            "across province",
+            "kashmiri people",
+            "party worker",
+            "peaceful resolution",
+            "press conference",
+            "punjab government",
+            "said india",
+            "section 144",
+            "spokesperson said",
+            "6th 2026"
+          ],
+          "same_event_matches": 23,
+          "evidence": [
+            {
+              "title": "Minister says federal govt 'seriously considering' imposition of emergency in KP",
+              "url": "https://www.dawn.com/news/2033784/minister-says-federal-govt-seriously-considering-imposition-of-emergency-in-kp",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Punjab Assembly panel approves Christian Marriage Bill that paves way for Nadra registration",
+              "url": "https://www.dawn.com/news/2033778/punjab-assembly-panel-approves-christian-marriage-bill-that-paves-way-for-nadra-registration",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Lahore to celebrate 10-day Basant festival from Jan 29 to Feb 7 next year",
+              "url": "https://www.dawn.com/news/2033737/lahore-to-celebrate-10-day-basant-festival-from-jan-29-to-feb-7-next-year",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 28,
+          "coverage_share": 0.3457,
+          "emphasis_ratio": 1.495,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.1928,
+          "topic_avg_sentiment": 0.0546,
+          "sentiment_difference": -0.2474,
+          "sentiment_pattern": "More negative than topic average",
+          "distinctive_keywords": [
+            "new province",
+            "administrative",
+            "constitutional",
+            "administrative unit",
+            "allegation",
+            "article",
+            "constitution",
+            "contact",
+            "debate",
+            "federation"
+          ],
+          "distinctive_phrases": [
+            "law order",
+            "new province",
+            "18th amendment",
+            "administrative unit",
+            "pti chairman",
+            "road blockade",
+            "source said",
+            "towards islamabad",
+            "according source",
+            "afghan territory"
+          ],
+          "same_event_matches": 27,
+          "evidence": [
+            {
+              "title": "Pakistan rejects India's 'baseless assertions' on disputed Jammu and Kashmir status",
+              "url": "https://www.geo.tv/latest/680951-pakistan-dismisses-indias-baseless-assertions-on-disputed-jammu-and-kashmir-status",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "PTI chief warns Sindh division without public consent would weaken federation",
+              "url": "https://www.geo.tv/latest/680972-pti-chief-warns-sindh-division-without-public-consent-would-weaken-federation",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Lahore to celebrate 10-day Basant festival in 2027",
+              "url": "https://www.geo.tv/latest/684374-lahore-to-celebrate-10-day-basant-festival-in-2027",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Express Tribune",
+          "articles": 14,
+          "coverage_share": 0.1728,
+          "emphasis_ratio": 0.65,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": 0.3428,
+          "topic_avg_sentiment": 0.0546,
+          "sentiment_difference": 0.2882,
+          "sentiment_pattern": "More positive than topic average",
+          "distinctive_keywords": [
+            "problem",
+            "2007",
+            "across country",
+            "actor",
+            "adding",
+            "ajk",
+            "apc",
+            "army",
+            "azad",
+            "bar"
+          ],
+          "distinctive_phrases": [
+            "pic twitter",
+            "according statement",
+            "across country",
+            "bar association",
+            "chief justice",
+            "counter terrorism",
+            "directed authority",
+            "earlier year",
+            "high court",
+            "khan said"
+          ],
+          "same_event_matches": 25,
+          "evidence": [
+            {
+              "title": "'You can’t keep brushing things under the rug', says Nadia Hussain on social issues",
+              "url": "https://tribune.com.pk/story/2628102/you-cant-keep-brushing-things-under-the-rug-says-nadia-hussain-on-social-issues",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "CM Afridi hits back at Centre over criticism of K-P's counterterror response",
+              "url": "https://tribune.com.pk/story/2631872/cm-afridi-hits-back-at-centre-over-criticism-of-k-ps-counterterror-response",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "PPP to seek Bilawal’s nod as TTAP reaches out ahead of opposition APC",
+              "url": "https://tribune.com.pk/story/2632090/ppp-to-seek-bilawals-nod-as-ttap-reaches-out-ahead-of-opposition-apc",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Business Recorder",
+          "articles": 8,
+          "coverage_share": 0.0988,
+          "emphasis_ratio": 0.331,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": 0.3528,
+          "topic_avg_sentiment": 0.0546,
+          "sentiment_difference": 0.2981,
+          "sentiment_pattern": "More positive than topic average",
+          "distinctive_keywords": [
+            "1965",
+            "1965 war",
+            "affair",
+            "arabia",
+            "armed force",
+            "capital",
+            "contribute",
+            "defence",
+            "directed",
+            "disputed territory"
+          ],
+          "distinctive_phrases": [
+            "peace stability",
+            "1965 war",
+            "armed force",
+            "bannu division",
+            "defence day",
+            "electric vehicle",
+            "government said",
+            "islamabad police",
+            "minister state interior",
+            "paid tribute"
+          ],
+          "same_event_matches": 17,
+          "evidence": [
+            {
+              "title": "Afghan govt must move from ‘militant mindset’ to statesmanship: Tarar",
+              "url": "https://www.brecorder.com/news/40441791/afghan-govt-must-move-from-militant-mindset-to-statesmanship-tarar",
+              "source": "Business Recorder",
+              "date": "2026-09-29"
+            },
+            {
+              "title": "Tarar says PTI-led KP govt has failed to act against terrorism",
+              "url": "https://www.brecorder.com/news/40441621/tarar-says-pti-led-kp-govt-has-failed-to-act-against-terrorism",
+              "source": "Business Recorder",
+              "date": "2026-09-28"
+            },
+            {
+              "title": "Defence Day event in Karachi honours fallen soldiers and military heroes",
+              "url": "https://www.brecorder.com/news/40438310/defence-day-event-in-karachi-honours-fallen-soldiers-and-military-heroes",
+              "source": "Business Recorder",
+              "date": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "label": "price, rupee, oil",
+      "topic_articles": 89,
+      "sources": [
+        {
+          "source": "Business Recorder",
+          "articles": 71,
+          "coverage_share": 0.7978,
+          "emphasis_ratio": 2.67,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": 0.2581,
+          "topic_avg_sentiment": 0.2022,
+          "sentiment_difference": 0.0559,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "rupee",
+            "bank",
+            "dollar",
+            "india",
+            "stock",
+            "bond",
+            "billion",
+            "ton",
+            "higher",
+            "rbi"
+          ],
+          "distinctive_phrases": [
+            "central bank",
+            "indian rupee",
+            "billion rupee",
+            "gold price",
+            "metric ton",
+            "palm oil",
+            "rate hike",
+            "record high",
+            "bank india",
+            "bond yield"
+          ],
+          "same_event_matches": 19,
+          "evidence": [
+            {
+              "title": "State Bank of India buys nearly 40% of Reliance's $1.35 billion debt sale",
+              "url": "https://www.brecorder.com/news/40441995/state-bank-of-india-buys-nearly-40-of-reliances-135-billion-debt-sale",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Gold price gains Rs4,300 per tola in Pakistan",
+              "url": "https://www.brecorder.com/news/40441981/gold-price-drops-by-rs2700-per-tola-in-pakistan",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Philippines central bank sees September inflation at 6.4% to 7.4%",
+              "url": "https://www.brecorder.com/news/40441968/philippines-central-bank-sees-september-inflation-at-64-to-74",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Express Tribune",
+          "articles": 8,
+          "coverage_share": 0.0899,
+          "emphasis_ratio": 0.338,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": 0.3119,
+          "topic_avg_sentiment": 0.2022,
+          "sentiment_difference": 0.1096,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "170",
+            "geopolitical",
+            "gram",
+            "imf",
+            "market price",
+            "remained",
+            "silver",
+            "psx",
+            "600",
+            "ban"
+          ],
+          "distinctive_phrases": [
+            "kse 100",
+            "monetary fund imf",
+            "price gold",
+            "price gram",
+            "selling pressure",
+            "imf mission",
+            "local market",
+            "market price",
+            "minister muhammad",
+            "per ounce"
+          ],
+          "same_event_matches": 19,
+          "evidence": [
+            {
+              "title": "PSX comes under selling pressure, sheds 1,003.40 points by midday",
+              "url": "https://tribune.com.pk/story/2627915/psx-comes-under-selling-pressure-sheds-100340-points-by-midday",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Gold price declines further in Pakistan amid global market slump",
+              "url": "https://tribune.com.pk/story/2627946/gold-price-declines-further-in-pakistan-amid-global-market-slump",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "PSX loses 994 points as ME conflict fears hit sentiment",
+              "url": "https://tribune.com.pk/story/2628103/psx-sheds-192049-points-amid-middle-east-tensions",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 6,
+          "coverage_share": 0.0674,
+          "emphasis_ratio": 0.292,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": -0.3155,
+          "topic_avg_sentiment": 0.2022,
+          "sentiment_difference": -0.5177,
+          "sentiment_pattern": "More negative than topic average",
+          "distinctive_keywords": [
+            "access",
+            "arabia",
+            "charge",
+            "chinese",
+            "competitive",
+            "consumer",
+            "daily",
+            "disruption",
+            "distribution",
+            "electric"
+          ],
+          "distinctive_phrases": [
+            "high speed",
+            "international market",
+            "middle east conflict",
+            "million tonne",
+            "open access",
+            "pakistan first",
+            "pakistan stock",
+            "power plant",
+            "rs1 per",
+            "saudi arabia"
+          ],
+          "same_event_matches": 12,
+          "evidence": [
+            {
+              "title": "$100 per barrel oil comes into view as Brent crude hits $97.34 amid rising Iran-US escalation",
+              "url": "https://www.geo.tv/latest/681104-crude-oil-pushes-towards-100-at-9734-as-iran-us-conflict-risks-a-gulf-supply-crunch",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "PSX sheds nearly 1,000 points as Middle East conflict hits investor sentiments",
+              "url": "https://www.geo.tv/latest/681148-psx-tumbles-over-2000-points-as-middle-east-conflict-rattles-investors",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Nepra clears wheeling charges for bulk electricity consumers",
+              "url": "https://www.geo.tv/latest/681153-nepra-clears-wheeling-charges-for-bulk-electricity-consumers",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Dawn",
+          "articles": 4,
+          "coverage_share": 0.0449,
+          "emphasis_ratio": 0.22,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": -0.2328,
+          "topic_avg_sentiment": 0.2022,
+          "sentiment_difference": -0.435,
+          "sentiment_pattern": "More negative than topic average",
+          "distinctive_keywords": [
+            "scheme",
+            "speed diesel",
+            "100 barrel",
+            "atif",
+            "bpd",
+            "data showed",
+            "deficit",
+            "fpcci",
+            "industry",
+            "kpler"
+          ],
+          "distinctive_phrases": [
+            "prime minister",
+            "100 barrel",
+            "crude export",
+            "global market",
+            "july august",
+            "pakistan chamber",
+            "published dawn",
+            "red sea",
+            "supply chain",
+            "fuel price"
+          ],
+          "same_event_matches": 11,
+          "evidence": [
+            {
+              "title": "Govt reduces petrol price by Re0.14 per litre, high-speed diesel rate by Rs1.89",
+              "url": "https://www.dawn.com/news/2033780/govt-reduces-petrol-price-by-re014-per-litre-high-speed-diesel-rate-by-rs189",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Govt reduces petrol price by Rs1.49 per litre, high-speed diesel rate by Rs2.73",
+              "url": "https://www.dawn.com/news/2033537/govt-reduces-petrol-price-by-rs149-per-litre-high-speed-diesel-rate-by-rs273",
+              "source": "Dawn",
+              "date": "2026-09-29"
+            },
+            {
+              "title": "Why has oil stayed below $100 a barrel despite supply disruptions amid US-Iran escalation?",
+              "url": "https://www.dawn.com/news/2028333/why-has-oil-stayed-below-100-a-barrel-despite-supply-disruptions-amid-us-iran-escalation",
+              "source": "Dawn",
+              "date": "2026-09-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "label": "iran, saudi, iranian",
+      "topic_articles": 80,
+      "sources": [
+        {
+          "source": "Business Recorder",
+          "articles": 22,
+          "coverage_share": 0.275,
+          "emphasis_ratio": 0.92,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.2831,
+          "topic_avg_sentiment": -0.3445,
+          "sentiment_difference": 0.0614,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "index",
+            "economy",
+            "sanction",
+            "araqchi",
+            "2024",
+            "adaptation",
+            "administration",
+            "baghdad",
+            "big",
+            "bridge"
+          ],
+          "distinctive_phrases": [
+            "new restricted",
+            "restricted zone",
+            "state medium",
+            "abu dhabi",
+            "crude price",
+            "east war",
+            "emergency signal",
+            "fossil fuel",
+            "india trade minister",
+            "iran nuclear"
+          ],
+          "same_event_matches": 40,
+          "evidence": [
+            {
+              "title": "Iran says it receives US response to latest proposal as Washington pulls out of Iraq",
+              "url": "https://www.brecorder.com/news/40441992/iran-says-it-receives-us-response-to-latest-proposal-as-washington-pulls-out-of-iraq",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Israel-bound flight diverted to Saudi Arabia after brawl between pilots, Israeli official says",
+              "url": "https://www.brecorder.com/news/40441972/israel-bound-flight-diverted-to-saudi-arabia-after-brawl-between-pilots-israeli-official-says",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Iran receives US feedback on seven-day trust-building plan",
+              "url": "https://www.brecorder.com/news/40441974/iran-receives-us-feedback-on-seven-day-trust-building-plan",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Dawn",
+          "articles": 21,
+          "coverage_share": 0.2625,
+          "emphasis_ratio": 1.285,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.4951,
+          "topic_avg_sentiment": -0.3445,
+          "sentiment_difference": -0.1505,
+          "sentiment_pattern": "More negative than topic average",
+          "distinctive_keywords": [
+            "military",
+            "barrel",
+            "coalition",
+            "conflict",
+            "iran war",
+            "ship",
+            "advance",
+            "armed",
+            "believe",
+            "bigger"
+          ],
+          "distinctive_phrases": [
+            "said iran",
+            "iran war",
+            "six month",
+            "three country",
+            "arabia conflict",
+            "arabia turkiye",
+            "araghchi said",
+            "armed attack",
+            "barrel oil",
+            "blockade iran"
+          ],
+          "same_event_matches": 37,
+          "evidence": [
+            {
+              "title": "Modi speaks with Trump as India seeks interim deal with US",
+              "url": "https://www.dawn.com/news/2033785/modi-speaks-with-trump-as-india-seeks-interim-deal-with-us",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Pakistan will be there to defend Saudi Arabia in any conflict: Khawaja Asif",
+              "url": "https://www.dawn.com/news/2033772/pakistan-will-be-there-to-defend-saudi-arabia-in-any-conflict-khawaja-asif",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Iraq PM hails new era of 'sovereignty' after US-led coalition exit",
+              "url": "https://www.dawn.com/news/2033700/iraq-pm-hails-new-era-of-sovereignty-after-us-led-coalition-exit",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 21,
+          "coverage_share": 0.2625,
+          "emphasis_ratio": 1.135,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.3366,
+          "topic_avg_sentiment": -0.3445,
+          "sentiment_difference": 0.008,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "shehbaz",
+            "abu",
+            "additional",
+            "admiral",
+            "afp",
+            "airline",
+            "ally",
+            "announce",
+            "announcement",
+            "approved"
+          ],
+          "distinctive_phrases": [
+            "reopen strait",
+            "united arab",
+            "according data",
+            "additional protocol",
+            "araqchi said",
+            "bessent said",
+            "chief staff",
+            "department said",
+            "economic warfare",
+            "enemy saudi"
+          ],
+          "same_event_matches": 42,
+          "evidence": [
+            {
+              "title": "Oil nears $97 as US-Iran attacks intensify fears of prolonged supply disruption",
+              "url": "https://www.geo.tv/latest/680948-oil-nears-97-as-us-iran-attacks-intensify-fears-of-prolonged-supply-disruption",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "'Arteries of global economy': PM says Hormuz, Bab al-Mandeb must remain open",
+              "url": "https://www.geo.tv/latest/683705-pm-shehbaz-addresses-united-nations-general-assembly",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Enemy of Saudi Arabia is enemy of Pakistan, says defence czar amid Houthi attacks",
+              "url": "https://www.geo.tv/latest/684419-enemy-of-saudi-arabia-is-enemy-of-pakistan-says-defence-czar-amid-houthi-attacks",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Express Tribune",
+          "articles": 16,
+          "coverage_share": 0.2,
+          "emphasis_ratio": 0.753,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.2418,
+          "topic_avg_sentiment": -0.3445,
+          "sentiment_difference": 0.1027,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "china",
+            "haaretz",
+            "russian",
+            "sheikh",
+            "uae president",
+            "warning",
+            "zayed",
+            "netanyahu",
+            "accountability",
+            "aid"
+          ],
+          "distinctive_phrases": [
+            "bin zayed",
+            "uae president",
+            "aqsa mosque",
+            "army chief",
+            "around world",
+            "china agree",
+            "defence minister",
+            "east jerusalem",
+            "expert argue",
+            "financial system"
+          ],
+          "same_event_matches": 13,
+          "evidence": [
+            {
+              "title": "The era of new alliances",
+              "url": "https://tribune.com.pk/story/2627906/the-era-of-new-alliances",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Netanyahu warned by UAE president before October 7 events, failed to brief security chiefs: Haaretz",
+              "url": "https://tribune.com.pk/story/2628133/netanyahu-warned-by-uae-president-before-october-7-events-failed-to-brief-security-chiefs-haaretz",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "UN commission says Israeli attacks on southern Syria ‘must stop’",
+              "url": "https://tribune.com.pk/story/2628131/un-commission-says-israeli-attacks-on-southern-syria-must-stop",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "label": "game, match, cup",
+      "topic_articles": 94,
+      "sources": [
+        {
+          "source": "Express Tribune",
+          "articles": 49,
+          "coverage_share": 0.5213,
+          "emphasis_ratio": 1.961,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": 0.548,
+          "topic_avg_sentiment": 0.5727,
+          "sentiment_difference": -0.0247,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "champion",
+            "october",
+            "squad",
+            "asia",
+            "barcelona",
+            "crowd",
+            "half",
+            "zimbabwe",
+            "aichi",
+            "butt"
+          ],
+          "distinctive_phrases": [
+            "los angeles",
+            "three year",
+            "champion league",
+            "commonwealth game",
+            "field goal",
+            "first test",
+            "half time",
+            "last two",
+            "recent year",
+            "said statement"
+          ],
+          "same_event_matches": 20,
+          "evidence": [
+            {
+              "title": "PSG go for three in a row as UCL returns",
+              "url": "https://tribune.com.pk/story/2627926/psg-go-for-three-in-a-row-as-ucl-returns",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Arshad falters again as Sri Lanka’s Pathirage strikes gold",
+              "url": "https://tribune.com.pk/story/2631891/arshad-falters-again-as-sri-lankas-pathirage-strikes-gold",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Pakistan look to bounce back in ASEAN Cup",
+              "url": "https://tribune.com.pk/story/2631886/pakistan-look-to-bounce-back-in-asean-cup",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 22,
+          "coverage_share": 0.234,
+          "emphasis_ratio": 1.012,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": 0.6136,
+          "topic_avg_sentiment": 0.5727,
+          "sentiment_difference": 0.0409,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "quarter",
+            "2027",
+            "arena",
+            "fight",
+            "hong",
+            "hong kong",
+            "kong",
+            "member",
+            "six",
+            "unbeaten"
+          ],
+          "distinctive_phrases": [
+            "cross border",
+            "final scheduled",
+            "icc code",
+            "icc code conduct",
+            "last day",
+            "medal match",
+            "member state",
+            "pakistan saying",
+            "pakistan team",
+            "pakistan test"
+          ],
+          "same_event_matches": 19,
+          "evidence": [
+            {
+              "title": "India agrees 'in principle' to take part in Pakistan-hosted 2027 SAF Games",
+              "url": "https://www.geo.tv/latest/680956-india-agrees-in-principle-to-take-part-in-pakistan-hosted-2027-saf-games",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Sabalenka surges past Townsend to reach US Open quarter-finals",
+              "url": "https://www.geo.tv/latest/680922-sabalenka-surges-past-townsend-to-reach-us-open-quarter-finals",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Gill smashes fastest ODI double ton as India chase 406 against West Indies",
+              "url": "https://www.geo.tv/latest/684439-gill-smashes-fastest-odi-double-ton-as-india-chase-406-against-west-indies",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Business Recorder",
+          "articles": 19,
+          "coverage_share": 0.2021,
+          "emphasis_ratio": 0.676,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": 0.6029,
+          "topic_avg_sentiment": 0.5727,
+          "sentiment_difference": 0.0302,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "debut",
+            "netherlands",
+            "pitch",
+            "always",
+            "apologised",
+            "artificial",
+            "association",
+            "battling",
+            "bid",
+            "briefly"
+          ],
+          "distinctive_phrases": [
+            "told reporter",
+            "cape town",
+            "first two",
+            "india pakistan",
+            "laver cup",
+            "monday pakistan",
+            "open new",
+            "put pressure",
+            "scheduled september",
+            "since april"
+          ],
+          "same_event_matches": 15,
+          "evidence": [
+            {
+              "title": "Lamine nets double as Spain win again and England beat 10-man Czechs",
+              "url": "https://www.brecorder.com/news/40441978/lamine-nets-double-as-spain-win-again-and-england-beat-10-man-czechs",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "South Africa look to gather momentum in ODI series with World Cup looming",
+              "url": "https://www.brecorder.com/news/40441977/south-africa-look-to-gather-momentum-in-odi-series-with-world-cup-looming",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Pakistan clinch eSports bronze at Asian Games",
+              "url": "https://www.brecorder.com/news/40441801/pakistan-clinch-esports-bronze-at-asian-games",
+              "source": "Business Recorder",
+              "date": "2026-09-29"
+            }
+          ]
+        },
+        {
+          "source": "Dawn",
+          "articles": 4,
+          "coverage_share": 0.0426,
+          "emphasis_ratio": 0.208,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": 0.5063,
+          "topic_avg_sentiment": 0.5727,
+          "sentiment_difference": -0.0664,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "awareness",
+            "board",
+            "decision",
+            "fourth",
+            "hesson",
+            "israeli",
+            "nadeem",
+            "ninth",
+            "ultimate",
+            "arshad"
+          ],
+          "distinctive_phrases": [
+            "board pcb",
+            "cricket board",
+            "cricket board pcb",
+            "game pakistan",
+            "sri lankan",
+            "world war",
+            "black armband",
+            "national anthem",
+            "sahibzada farhan",
+            "seven player"
+          ],
+          "same_event_matches": 2,
+          "evidence": [
+            {
+              "title": "Asian Games: Arshad Nadeem finishes fourth as Rumesh Pathirage strikes javelin gold in rainy Nagoya",
+              "url": "https://www.dawn.com/news/2033295/asian-games-arshad-nadeem-finishes-fourth-as-rumesh-pathirage-strikes-javelin-gold-in-rainy-nagoya",
+              "source": "Dawn",
+              "date": "2026-09-28"
+            },
+            {
+              "title": "Irish players refuse handshakes, wear black armbands in Nation Leagues clash against Israel",
+              "url": "https://www.dawn.com/news/2033285/irish-players-refuse-handshakes-wear-black-armbands-in-nation-leagues-clash-against-israel",
+              "source": "Dawn",
+              "date": "2026-09-28"
+            },
+            {
+              "title": "Volleyball win brightens mixed day for Pakistan at Asian Games",
+              "url": "https://www.dawn.com/news/2033047/volleyball-win-brightens-mixed-day-for-pakistan-at-asian-games",
+              "source": "Dawn",
+              "date": "2026-09-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "label": "human, woman, right",
+      "topic_articles": 98,
+      "sources": [
+        {
+          "source": "Express Tribune",
+          "articles": 42,
+          "coverage_share": 0.4286,
+          "emphasis_ratio": 1.613,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": 0.2339,
+          "topic_avg_sentiment": 0.2286,
+          "sentiment_difference": 0.0053,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "career",
+            "case",
+            "muslim",
+            "acting",
+            "akbar",
+            "athlete",
+            "behaviour",
+            "centre",
+            "character",
+            "conversation"
+          ],
+          "distinctive_phrases": [
+            "post instagram",
+            "view post",
+            "view post instagram",
+            "asian game",
+            "authority said",
+            "first time",
+            "hugging face",
+            "long term",
+            "one year",
+            "people around"
+          ],
+          "same_event_matches": 3,
+          "evidence": [
+            {
+              "title": "Reinventing widowhood",
+              "url": "https://tribune.com.pk/story/2627928/reinventing-widowhood",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Nagoya mayor says sorry for Asian Games 'inconveniences'",
+              "url": "https://tribune.com.pk/story/2632228/nagoya-mayor-says-sorry-for-asian-games-inconveniences",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Ramsha Salahuddin reveals divorce, remarriage",
+              "url": "https://tribune.com.pk/story/2632083/ramsha-salahuddin-reveals-divorce-remarriage",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 27,
+          "coverage_share": 0.2755,
+          "emphasis_ratio": 1.191,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": 0.1881,
+          "topic_avg_sentiment": 0.2286,
+          "sentiment_difference": -0.0406,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "air quality",
+            "closure",
+            "dog",
+            "emission",
+            "humanity",
+            "need",
+            "ocean",
+            "ozone",
+            "star",
+            "wildfire"
+          ],
+          "distinctive_phrases": [
+            "air pollution",
+            "air quality",
+            "large scale",
+            "rural woman",
+            "take step",
+            "ten thousand",
+            "would make",
+            "along route",
+            "also highlighted",
+            "also urged"
+          ],
+          "same_event_matches": 4,
+          "evidence": [
+            {
+              "title": "Wildfires, heatwaves endanger air quality, health: UN",
+              "url": "https://www.geo.tv/latest/680965-wildfires-heatwaves-endanger-air-quality-health-un",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Palace issues update on King Charles after Prince William takes lead role",
+              "url": "https://www.geo.tv/latest/681008-palace-issues-update-on-king-charles-after-prince-william-takes-lead-role",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "India's fat dog vote goes viral",
+              "url": "https://www.geo.tv/latest/684343-indias-fat-dog-vote-goes-viral",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Business Recorder",
+          "articles": 23,
+          "coverage_share": 0.2347,
+          "emphasis_ratio": 0.785,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": 0.1677,
+          "topic_avg_sentiment": 0.2286,
+          "sentiment_difference": -0.0609,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "drink",
+            "airline",
+            "beverage",
+            "bull",
+            "company said",
+            "deal",
+            "decision",
+            "energy",
+            "energy drink",
+            "enterprise"
+          ],
+          "distinctive_phrases": [
+            "company said",
+            "energy drink",
+            "red bull",
+            "said wednesday",
+            "air india",
+            "champion league",
+            "company also",
+            "flag carrier",
+            "football association",
+            "former prime minister"
+          ],
+          "same_event_matches": 4,
+          "evidence": [
+            {
+              "title": "Prince Harry's children targeted by 'European paparazzi' while at school in England",
+              "url": "https://www.brecorder.com/news/40441997/prince-harrys-children-targeted-by-european-paparazzi-while-at-school-in-england",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Would-be Taylor Swift concert attacker loses privacy case against Disney",
+              "url": "https://www.brecorder.com/news/40441990/would-be-taylor-swift-concert-attacker-loses-privacy-case-against-disney",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Apple plans to launch new smart-home hub on Oct 13, reports",
+              "url": "https://www.brecorder.com/news/40441994/apple-plans-to-launch-new-smart-home-hub-on-oct-13-reports",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Dawn",
+          "articles": 6,
+          "coverage_share": 0.0612,
+          "emphasis_ratio": 0.3,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": 0.6076,
+          "topic_avg_sentiment": 0.2286,
+          "sentiment_difference": 0.379,
+          "sentiment_pattern": "More positive than topic average",
+          "distinctive_keywords": [
+            "afd",
+            "american",
+            "born",
+            "concern",
+            "ethnic",
+            "far",
+            "germany",
+            "give",
+            "gold",
+            "government"
+          ],
+          "distinctive_phrases": [
+            "per cent",
+            "british government",
+            "foundation said",
+            "gold ring",
+            "occupied territory",
+            "private sector",
+            "raised concern",
+            "right lawyer",
+            "social medium post",
+            "state government"
+          ],
+          "same_event_matches": 3,
+          "evidence": [
+            {
+              "title": "Swedish rights prize honours Pakistani human rights lawyer Jalila Haider",
+              "url": "https://www.dawn.com/news/2033707/swedish-rights-prize-honours-pakistani-human-rights-lawyer-jalila-haider",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Trump unveils AI chatbot for US government services",
+              "url": "https://www.dawn.com/news/2033564/trump-unveils-ai-chatbot-for-us-government-services",
+              "source": "Dawn",
+              "date": "2026-09-29"
+            },
+            {
+              "title": "Special delivery: India's Tamil Nadu state hands out gold for newborns",
+              "url": "https://www.dawn.com/news/2033273/special-delivery-indias-tamil-nadu-state-hands-out-gold-for-newborns",
+              "source": "Dawn",
+              "date": "2026-09-28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "label": "police, suspect, case",
+      "topic_articles": 56,
+      "sources": [
+        {
+          "source": "Dawn",
+          "articles": 29,
+          "coverage_share": 0.5179,
+          "emphasis_ratio": 2.536,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": -0.8095,
+          "topic_avg_sentiment": -0.7781,
+          "sentiment_difference": -0.0314,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "defence police",
+            "evidence",
+            "gang",
+            "act",
+            "ali",
+            "ali body",
+            "ali family",
+            "allegedly gang",
+            "arrest bail",
+            "complainant"
+          ],
+          "distinctive_phrases": [
+            "official said",
+            "day physical",
+            "day physical remand",
+            "hammad azhar",
+            "ali body",
+            "ali family",
+            "arrest bail",
+            "defence police",
+            "post arrest bail",
+            "published dawn"
+          ],
+          "same_event_matches": 35,
+          "evidence": [
+            {
+              "title": "UN experts call for immediate release of Imaan and Hadi, dropping 'unfounded charges' against the couple",
+              "url": "https://www.dawn.com/news/2033782/un-experts-call-for-immediate-release-of-imaan-and-hadi-dropping-unfounded-charges-against-the-couple",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Punjab rolls out 33 mobile police stations offering 14 services, including FIR registration",
+              "url": "https://www.dawn.com/news/2033764/punjab-rolls-out-33-mobile-police-stations-offering-14-services-including-fir-registration",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Lahore police granted 3-day physical remand of woman in connection with Azeri national's rape case",
+              "url": "https://www.dawn.com/news/2033731/lahore-police-granted-3-day-physical-remand-of-woman-in-connection-with-azeri-nationals-rape-case",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 15,
+          "coverage_share": 0.2679,
+          "emphasis_ratio": 1.158,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": -0.8058,
+          "topic_avg_sentiment": -0.7781,
+          "sentiment_difference": -0.0277,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "batter",
+            "cricketer",
+            "foreign",
+            "home minister",
+            "investigator",
+            "phone",
+            "police said",
+            "source",
+            "wicketkeeper",
+            "agency"
+          ],
+          "distinctive_phrases": [
+            "nccia source",
+            "police said",
+            "home minister",
+            "mohammad rizwan",
+            "wicketkeeper batter",
+            "year old",
+            "according police",
+            "according source",
+            "according statement",
+            "arrived lahore"
+          ],
+          "same_event_matches": 24,
+          "evidence": [
+            {
+              "title": "ATC grants 20-day physical remand of PTI leader Hammad Azhar",
+              "url": "https://www.geo.tv/latest/680967-pti-leader-hammad-azhars-mother-moves-lhc-seeking-sons-recovery",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "PCB launches disciplinary inquiry into reports involving Pakistan players",
+              "url": "https://www.geo.tv/latest/680982-pcb-launches-disciplinary-inquiry-into-reports-involving-pakistan-players",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Mir Raza case: Judicial commission seeks clarification over alleged withholding of records",
+              "url": "https://www.geo.tv/latest/681011-mir-raza-case-judicial-commission-seeks-clarification-over-alleged-withholding-of-records",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Express Tribune",
+          "articles": 9,
+          "coverage_share": 0.1607,
+          "emphasis_ratio": 0.605,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": -0.7044,
+          "topic_avg_sentiment": -0.7781,
+          "sentiment_difference": 0.0737,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "ali zain",
+            "zain",
+            "access",
+            "age",
+            "child",
+            "custody",
+            "damage",
+            "detained",
+            "dispute",
+            "extension"
+          ],
+          "distinctive_phrases": [
+            "gang rape",
+            "ali zain",
+            "told court",
+            "gang rape case",
+            "high court",
+            "law order situation",
+            "medium access",
+            "medium platform",
+            "multiple case",
+            "order situation"
+          ],
+          "same_event_matches": 21,
+          "evidence": [
+            {
+              "title": "Lahore ATC grants 20-day remand of PTI leader Hammad Azhar in Jinnah House attack case",
+              "url": "https://tribune.com.pk/story/2627936/lahore-atc-grants-20-day-remand-of-pti-leader-hammad-azhar-in-jinnah-house-attack-case",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Islamabad ATC grants bail to Mushtaq Ahmad, 95 others over AJK protest",
+              "url": "https://tribune.com.pk/story/2627918/islamabad-atc-grants-bail-to-mushtaq-ahmad-95-others-over-ajk-protest",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "KU senior professor allegedly assaulted, detained after minor traffic dispute",
+              "url": "https://tribune.com.pk/story/2628130/ku-senior-professor-allegedly-assaulted-detained-after-minor-traffic-dispute",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Business Recorder",
+          "articles": 3,
+          "coverage_share": 0.0536,
+          "emphasis_ratio": 0.179,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": -0.5578,
+          "topic_avg_sentiment": -0.7781,
+          "sentiment_difference": 0.2204,
+          "sentiment_pattern": "More positive than topic average",
+          "distinctive_keywords": [
+            "accountability",
+            "allegation",
+            "bus",
+            "conduct",
+            "delhi",
+            "india",
+            "investigation team",
+            "issue",
+            "medium reported",
+            "mortem"
+          ],
+          "distinctive_phrases": [
+            "investigation team",
+            "last week",
+            "medium reported",
+            "pakistan test",
+            "raza ali",
+            "report concerning",
+            "test squad",
+            "discipline conduct",
+            "medium report",
+            "post mortem"
+          ],
+          "same_event_matches": 5,
+          "evidence": [
+            {
+              "title": "CM Murad approves request to extend Mir Raza judicial commission’s tenure",
+              "url": "https://www.brecorder.com/news/40441595/cm-murad-approves-request-to-extend-mir-raza-judicial-commissions-tenure",
+              "source": "Business Recorder",
+              "date": "2026-09-28"
+            },
+            {
+              "title": "India's top court says need to fix accountability over Delhi rape cases, media reports",
+              "url": "https://www.brecorder.com/news/40441593/indias-top-court-says-need-to-fix-accountability-over-delhi-rape-cases-media-reports",
+              "source": "Business Recorder",
+              "date": "2026-09-28"
+            },
+            {
+              "title": "PCB begins disciplinary probe amid reports of conduct issues in Test squad",
+              "url": "https://www.brecorder.com/news/40438304/pcb-begins-disciplinary-probe-amid-reports-of-conduct-issues-in-test-squad",
+              "source": "Business Recorder",
+              "date": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "label": "tax, fbr, meeting",
+      "topic_articles": 85,
+      "sources": [
+        {
+          "source": "Business Recorder",
+          "articles": 40,
+          "coverage_share": 0.4706,
+          "emphasis_ratio": 1.575,
+          "coverage_pattern": "Higher-than-typical topic coverage",
+          "avg_sentiment": 0.6823,
+          "topic_avg_sentiment": 0.648,
+          "sentiment_difference": 0.0343,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "company",
+            "investment",
+            "cooperation",
+            "limited",
+            "extension",
+            "business",
+            "2026",
+            "asia",
+            "banking",
+            "bloomberg"
+          ],
+          "distinctive_phrases": [
+            "pakistan stock exchange",
+            "stock exchange psx",
+            "central asia",
+            "financial institution",
+            "pakistan limited",
+            "pakistan stock",
+            "power plant",
+            "president ceo",
+            "said tuesday",
+            "state bank"
+          ],
+          "same_event_matches": 19,
+          "evidence": [
+            {
+              "title": "IGI Holdings acquires Akzo Nobel",
+              "url": "https://www.brecorder.com/news/40441998/igi-holdings-acquires-akzo-nobel",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Circular about tax returns extension is fake, FBR clarifies",
+              "url": "https://www.brecorder.com/news/40441996/circular-about-tax-returns-extension-is-fake-fbr-clarifies",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "Pakistan’s banknote paper maker SPL resumes normal operations after major upgrade",
+              "url": "https://www.brecorder.com/news/40441985/pakistans-banknote-paper-maker-spl-resumes-normal-operations-after-major-upgrade",
+              "source": "Business Recorder",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Geo News",
+          "articles": 18,
+          "coverage_share": 0.2118,
+          "emphasis_ratio": 0.916,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": 0.3958,
+          "topic_avg_sentiment": 0.648,
+          "sentiment_difference": -0.2521,
+          "sentiment_pattern": "More negative than topic average",
+          "distinctive_keywords": [
+            "city",
+            "dubai",
+            "file",
+            "file return",
+            "land",
+            "penalty",
+            "score",
+            "000",
+            "1965",
+            "2025"
+          ],
+          "distinctive_phrases": [
+            "file return",
+            "report said",
+            "abu dhabi",
+            "across pakistan",
+            "civil servant",
+            "climate change",
+            "director general",
+            "disaster risk",
+            "early warning",
+            "five day"
+          ],
+          "same_event_matches": 12,
+          "evidence": [
+            {
+              "title": "From 1965 to Marka-e-Haq, PM Shehbaz lauds PAF's valour, tactical brilliance, sacrifices",
+              "url": "https://www.geo.tv/latest/680937-from-1965-to-marka-e-haq-pm-shehbaz-hails-pafs-courage-tactical-brilliance-and-sacrifice",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "Dubai launches ultra fast immigration system to speed up airport processing",
+              "url": "https://www.geo.tv/latest/680973-dubai-launches-ultra-fast-immigration-system-to-speed-up-airport-processing",
+              "source": "Geo News",
+              "date": ""
+            },
+            {
+              "title": "FBR extends deadline for filing income tax",
+              "url": "https://www.geo.tv/latest/684438-fbr-extends-deadline-for-filing-income-tax",
+              "source": "Geo News",
+              "date": ""
+            }
+          ]
+        },
+        {
+          "source": "Dawn",
+          "articles": 15,
+          "coverage_share": 0.1765,
+          "emphasis_ratio": 0.864,
+          "coverage_pattern": "Near overall topic coverage",
+          "avg_sentiment": 0.8455,
+          "topic_avg_sentiment": 0.648,
+          "sentiment_difference": 0.1976,
+          "sentiment_pattern": "More positive than topic average",
+          "distinctive_keywords": [
+            "growth",
+            "sustainable",
+            "pmo",
+            "pmo said",
+            "sustainable growth",
+            "achieve",
+            "across",
+            "action",
+            "action plan",
+            "active"
+          ],
+          "distinctive_phrases": [
+            "pmo said",
+            "across punjab",
+            "action plan",
+            "air pollution",
+            "air quality",
+            "also highlighted",
+            "cga mag",
+            "chaudhry said",
+            "export led",
+            "federal government"
+          ],
+          "same_event_matches": 18,
+          "evidence": [
+            {
+              "title": "Govt defends decision to buy 45 bulletproof vehicles for SCO moot, says available 2016 models 'far below' standards",
+              "url": "https://www.dawn.com/news/2033788/govt-defends-decision-to-buy-45-bulletproof-vehicles-for-sco-moot-says-available-2016-models-far-below-standards",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "FBR extends deadline for filing income tax returns to Oct 15",
+              "url": "https://www.dawn.com/news/2033760/fbr-extends-deadline-for-filing-income-tax-returns-to-oct-15",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            },
+            {
+              "title": "CM okays plan to enhance Sindh police’s counterterrorism capabilities",
+              "url": "https://www.dawn.com/news/2033624/cm-okays-plan-to-enhance-sindh-polices-counterterrorism-capabilities",
+              "source": "Dawn",
+              "date": "2026-09-30"
+            }
+          ]
+        },
+        {
+          "source": "Express Tribune",
+          "articles": 12,
+          "coverage_share": 0.1412,
+          "emphasis_ratio": 0.531,
+          "coverage_pattern": "Lower-than-typical topic coverage",
+          "avg_sentiment": 0.6649,
+          "topic_avg_sentiment": 0.648,
+          "sentiment_difference": 0.0169,
+          "sentiment_pattern": "Close to topic average",
+          "distinctive_keywords": [
+            "council",
+            "dar",
+            "foreign",
+            "player",
+            "state",
+            "head state",
+            "alongside",
+            "ambassador",
+            "appearance",
+            "arabian"
+          ],
+          "distinctive_phrases": [
+            "council head",
+            "council head state",
+            "october 2026",
+            "head state",
+            "arabian sea",
+            "cabinet division",
+            "china pakistan",
+            "foreign minister",
+            "fourth review",
+            "fuel relief"
+          ],
+          "same_event_matches": 14,
+          "evidence": [
+            {
+              "title": "PCB probe deepens after Lord’s debacle",
+              "url": "https://tribune.com.pk/story/2627911/pcb-probe-deepens-after-lords-debacle",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "SCO meeting to begin in Islamabad under Pakistan's chairmanship on Monday: FO",
+              "url": "https://tribune.com.pk/story/2631682/sco-meeting-to-begin-in-islamabad-under-pakistans-chairmanship-on-monday-fo",
+              "source": "Express Tribune",
+              "date": ""
+            },
+            {
+              "title": "Newly inducted HANGOR conducts maiden live weapon firing in Arabian Sea: ISPR",
+              "url": "https://tribune.com.pk/story/2631672/newly-inducted-hangor-conducts-maiden-live-weapon-firing-in-arabian-sea-ispr",
+              "source": "Express Tribune",
+              "date": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
