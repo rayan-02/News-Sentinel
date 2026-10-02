@@ -2,66 +2,82 @@
 
 {% block content %}
 
-<div id="dashboard-error" class="error" hidden></div>
+<div id="dashboard-error" class="error" role="alert" hidden></div>
 
-<section class="stats" id="stats">
+
+<div class="page-intro">
+    <div>
+        <p class="eyebrow">Dashboard</p>
+        <h2>Overview</h2>
+        <p>
+            What the pipeline found in the Pakistani news it collected:
+            topics, momentum, related coverage and how outlets compare.
+        </p>
+    </div>
+</div>
+
+
+<section class="stats" id="stats" aria-label="Key figures">
 
     <div class="stat">
         <span class="stat-label">Articles</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="articles">—</span>
         <span class="stat-description">Articles analyzed</span>
     </div>
 
     <div class="stat">
         <span class="stat-label">Topics</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="topics">—</span>
         <span class="stat-description">Detected clusters</span>
     </div>
 
     <div class="stat red">
         <span class="stat-label">Emerging</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="emerging">—</span>
         <span class="stat-description">Topics showing unusual growth</span>
     </div>
 
     <div class="stat">
         <span class="stat-label">Sources</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="sources">—</span>
         <span class="stat-description">News outlets analyzed</span>
     </div>
 
 </section>
 
+
 <div class="grid wide-left">
 
-    <section class="card">
+    <section class="card" aria-labelledby="activity-title">
 
         <div class="card-header">
-            <h2 class="card-title">Topic Activity</h2>
+            <h3 class="card-title" id="activity-title">Topic activity over time</h3>
             <span class="card-meta">3-day rolling average</span>
         </div>
 
         <p class="note">
-            Activity of the most prominent topics over time.
+            The most active topics right now. Hover the chart for exact values;
+            use the buttons to show or hide a topic.
         </p>
 
-        <div id="trend-chart" class="chart-container">
+        <div id="trend-chart" class="chart-host">
             <div class="empty">Loading trend data...</div>
         </div>
 
-        <div id="trend-legend"></div>
+        <div id="trend-legend" class="chart-legend"></div>
 
     </section>
 
-    <section class="card accent">
+
+    <section class="card accent" aria-labelledby="emerging-title">
 
         <div class="card-header">
-            <h2 class="card-title">Emerging Topics</h2>
+            <h3 class="card-title" id="emerging-title">Emerging topics</h3>
             <span class="card-meta">emerging_signals.csv</span>
         </div>
 
         <p class="note">
-            Topics whose recent activity is above their baseline.
+            Topics whose recent share of coverage is above their baseline.
         </p>
 
         <div id="emerging-topics">
@@ -72,70 +88,43 @@
 
 </div>
 
+
 <div class="grid grid-2">
 
-    <section class="card">
+    <section class="card" aria-labelledby="topics-title">
 
         <div class="card-header">
-            <h2 class="card-title">Articles by Source</h2>
-            <span class="card-meta">articles_ml.csv</span>
+            <h3 class="card-title" id="topics-title">Topics at a glance</h3>
+            <a href="/topics" class="pill">View all</a>
         </div>
 
-        <div id="source-distribution" class="chart-container">
-            <div class="empty">Loading source data...</div>
+        <div id="topic-summary">
+            <div class="empty">Loading topics...</div>
         </div>
 
     </section>
 
-    <section class="card">
+
+    <section class="card" aria-labelledby="sentiment-title">
 
         <div class="card-header">
-            <h2 class="card-title">Articles by Topic</h2>
-            <span class="card-meta">clusters_summary.csv</span>
-        </div>
-
-        <div id="topic-distribution" class="chart-container">
-            <div class="empty">Loading topic data...</div>
-        </div>
-
-    </section>
-
-</div>
-
-<div class="grid grid-2">
-
-    <section class="card">
-
-        <div class="card-header">
-            <h2 class="card-title">Sentiment Distribution</h2>
+            <h3 class="card-title" id="sentiment-title">Sentiment mix</h3>
             <span class="card-meta">articles_ml.csv</span>
         </div>
 
-        <div id="sentiment-distribution" class="chart-container">
+        <div id="sentiment-summary">
             <div class="empty">Loading sentiment...</div>
         </div>
 
     </section>
 
-    <section class="card">
-
-        <div class="card-header">
-            <h2 class="card-title">Activity Over Time</h2>
-            <span class="card-meta">topic_trends.csv</span>
-        </div>
-
-        <div id="activity-timeline" class="chart-container">
-            <div class="empty">Loading timeline...</div>
-        </div>
-
-    </section>
-
 </div>
 
-<section class="card">
+
+<section class="card" aria-labelledby="pairs-title">
 
     <div class="card-header">
-        <h2 class="card-title">Recent Cross-Source Stories</h2>
+        <h3 class="card-title" id="pairs-title">Recent cross-source stories</h3>
         <a href="/similar" class="pill">View all</a>
     </div>
 
@@ -149,17 +138,18 @@
 
 </section>
 
+
 <div class="grid wide-left">
 
-    <section class="card accent">
+    <section class="card accent" aria-labelledby="sources-title">
 
         <div class="card-header">
-            <h2 class="card-title">Source Analysis</h2>
+            <h3 class="card-title" id="sources-title">Source analysis</h3>
             <a href="/sources" class="pill">Full analysis</a>
         </div>
 
         <p class="note">
-            Article volume and average sentiment by source.
+            Article volume by source.
         </p>
 
         <div id="source-summary">
@@ -168,10 +158,11 @@
 
     </section>
 
-    <section class="card">
+
+    <section class="card" aria-labelledby="chat-title">
 
         <div class="card-header">
-            <h2 class="card-title">AI Chat</h2>
+            <h3 class="card-title" id="chat-title">AI chat</h3>
             <span class="badge">Planned</span>
         </div>
 
@@ -179,24 +170,27 @@
             Ask questions about the analyzed news dataset.
         </p>
 
-        <div class="empty">
-            The RAG chatbot will be connected here later.
-        </p>
+        <div class="chat-teaser">
+            <div class="empty">
+                The RAG chatbot will be connected here later.
+            </div>
 
-        <a href="/chat" class="pill">Open AI Chat</a>
+            <a href="/chat" class="pill">Open AI chat</a>
+        </div>
 
     </section>
 
 </div>
 
-<section class="card">
+
+<section class="card" aria-labelledby="latest-title">
 
     <div class="card-header">
-        <h2 class="card-title">Latest Articles</h2>
+        <h3 class="card-title" id="latest-title">Latest articles</h3>
         <a href="/articles" class="pill">View all</a>
     </div>
 
-    <div id="latest-articles">
+    <div id="latest-articles" class="article-list">
         <div class="empty">Loading latest articles...</div>
     </div>
 
@@ -204,8 +198,7 @@
 
 {% endblock %}
 
+
 {% block scripts %}
-
 <script src="{{ url_for('static', filename='js/overview.js') }}"></script>
-
 {% endblock %}

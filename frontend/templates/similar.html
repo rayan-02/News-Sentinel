@@ -2,34 +2,43 @@
 
 {% block content %}
 
-<div id="similar-error" class="error" hidden></div>
+<div id="similar-error" class="error" role="alert" hidden></div>
 
 <div class="page-intro">
     <div>
-        <p class="eyebrow">SEMANTIC SIMILARITY</p>
-        <h2>Similar Stories</h2>
+        <p class="eyebrow">Semantic similarity</p>
+        <h2>Similar stories</h2>
         <p>
             Articles that are semantically similar based on their generated embeddings.
+            Each pair shows two articles side by side, with the cosine similarity between them.
         </p>
     </div>
 
-    <div class="topic-count" id="pair-count">
+    <div class="count-stamp" id="pair-count" aria-live="polite">
         —
     </div>
 </div>
 
-<section class="card">
+<section class="card" aria-labelledby="pairs-heading">
+
     <div class="card-header">
-        <h2 class="card-title">Cross-Source Stories</h2>
+        <h3 class="card-title" id="pairs-heading">Cross-source stories</h3>
         <span class="card-meta">Different outlets covering similar content</span>
     </div>
 
-    <div id="similar-pairs">
+    <div id="similar-pairs" class="similar-list">
         <div class="empty">Loading similar stories...</div>
     </div>
+
+    <div class="load-more" id="pairs-more" hidden>
+        <small id="pairs-shown"></small>
+        <button type="button" class="button ghost" id="pairs-more-button">Show more</button>
+    </div>
+
 </section>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/similar.js') }}"></script>

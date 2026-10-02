@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<div id="sources-error" class="error" hidden></div>
+<div id="sources-error" class="error" role="alert" hidden></div>
 
 <div class="page-intro">
     <div>
-        <p class="eyebrow">SOURCE ANALYSIS</p>
-        <h2>Source Analysis</h2>
+        <p class="eyebrow">Source analysis</p>
+        <h2>Source analysis</h2>
         <p>
             Compare measurable differences in coverage, sentiment and topic emphasis
             across news outlets.
@@ -15,53 +15,79 @@
     </div>
 </div>
 
-<section class="notice" id="source-disclaimer">
+<section class="notice" id="source-disclaimer" aria-label="How to read this page">
     Loading analysis note...
 </section>
 
-<section class="stats" id="source-stats">
+<section class="stats stats-3" id="source-stats" aria-label="Key figures">
+
     <div class="stat">
         <span class="stat-label">Sources</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="sources">—</span>
         <span class="stat-description">News outlets analyzed</span>
     </div>
 
     <div class="stat">
         <span class="stat-label">Topics</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="topics">—</span>
         <span class="stat-description">Topics compared</span>
     </div>
 
     <div class="stat">
         <span class="stat-label">Articles</span>
-        <span class="stat-value">—</span>
+        <span class="stat-value" data-stat="articles">—</span>
         <span class="stat-description">Articles analyzed</span>
     </div>
+
 </section>
 
-<section class="card">
+<section class="card accent" aria-labelledby="compare-title">
+
     <div class="card-header">
-        <h2 class="card-title">Sources</h2>
-        <span class="card-meta">Article volume and sentiment</span>
+        <h3 class="card-title" id="compare-title">Compare sources</h3>
+        <span class="card-meta">Article volume and average sentiment</span>
+    </div>
+
+    <div class="measure-row" aria-label="What is measured">
+        <span class="label">We measure</span>
+        <span class="tag">Coverage share</span>
+        <span class="tag">Topic emphasis</span>
+        <span class="tag">Sentiment difference</span>
+        <span class="tag">Distinctive keywords</span>
+        <span class="tag">Distinctive phrases</span>
+        <span class="tag">Same-event matches</span>
     </div>
 
     <div id="source-summary">
         <div class="empty">Loading source data...</div>
     </div>
+
 </section>
 
-<section class="card">
+<section class="card" aria-labelledby="topic-analysis-title">
+
     <div class="card-header">
-        <h2 class="card-title">Topic-Level Analysis</h2>
+        <h3 class="card-title" id="topic-analysis-title">Topic-level analysis</h3>
         <span class="card-meta">Coverage and sentiment differences</span>
     </div>
 
-    <div id="source-topics">
+    <div class="topic-picker">
+        <div class="filter">
+            <label for="topic-select">Show topic</label>
+            <select id="topic-select">
+                <option value="">All topics</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="source-topics" class="stack-list">
         <div class="empty">Loading topic analysis...</div>
     </div>
+
 </section>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/sources.js') }}"></script>

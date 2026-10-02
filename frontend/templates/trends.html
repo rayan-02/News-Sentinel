@@ -2,41 +2,64 @@
 
 {% block content %}
 
-<div id="trends-error" class="error" hidden></div>
+<div id="trends-error" class="error" role="alert" hidden></div>
 
 <div class="page-intro">
     <div>
-        <p class="eyebrow">TIME SERIES ANALYSIS</p>
-        <h2>Topic Trends</h2>
+        <p class="eyebrow">Time series analysis</p>
+        <h2>Topic trends</h2>
         <p>
-            Track how activity around detected topics changes over time.
+            Track how activity around each detected topic changes over time.
         </p>
+    </div>
+
+    <div class="count-stamp" id="trend-range" aria-live="polite">
+        —
     </div>
 </div>
 
-<section class="card">
+<section class="card" aria-labelledby="trend-title">
+
     <div class="card-header">
-        <h2 class="card-title">Topic Activity</h2>
-        <span class="card-meta">Daily article counts</span>
+        <h3 class="card-title" id="trend-title">Topic activity</h3>
+        <span class="card-meta" id="trend-metric-note">3-day rolling average</span>
     </div>
 
-    <div id="trend-chart" class="large-chart">
+    <div class="chart-controls">
+
+        <div class="segmented" id="metric-switch" role="group" aria-label="Chart metric">
+            <button type="button" data-metric="counts" aria-pressed="false">Daily</button>
+            <button type="button" data-metric="rolling_3d" aria-pressed="true">3-day avg</button>
+            <button type="button" data-metric="rolling_7d" aria-pressed="false">7-day avg</button>
+        </div>
+
+        <span class="card-meta">Articles per day, by topic</span>
+
+    </div>
+
+    <div id="trend-chart" class="chart-host">
         <div class="empty">Loading trend data...</div>
     </div>
+
+    <div id="trend-legend" class="chart-legend"></div>
+
 </section>
 
-<section class="card">
+<section class="card" aria-labelledby="trend-detail-title">
+
     <div class="card-header">
-        <h2 class="card-title">Topic Details</h2>
-        <span class="card-meta">Rolling averages</span>
+        <h3 class="card-title" id="trend-detail-title">Topic details</h3>
+        <span class="card-meta">Latest values and daily shape</span>
     </div>
 
     <div id="trend-table">
         <div class="empty">Loading topic trends...</div>
     </div>
+
 </section>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/trends.js') }}"></script>

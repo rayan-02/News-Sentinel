@@ -2,23 +2,24 @@
 
 {% block content %}
 
-<div id="articles-error" class="error" hidden></div>
+<div id="articles-error" class="error" role="alert" hidden></div>
 
 <div class="page-intro">
     <div>
-        <p class="eyebrow">ARTICLE DATABASE</p>
+        <p class="eyebrow">Article database</p>
         <h2>Articles</h2>
         <p>
             Browse the articles processed by the News Sentinel pipeline.
+            Each title opens the original article.
         </p>
     </div>
 
-    <div class="topic-count" id="article-count">
+    <div class="count-stamp" id="article-count" aria-live="polite">
         —
     </div>
 </div>
 
-<section class="card filters-card">
+<section class="card filters-card" aria-label="Filters">
 
     <div class="filters">
 
@@ -46,30 +47,39 @@
         <div class="filter search-filter">
             <label for="article-search">Search</label>
             <input
-                type="text"
+                type="search"
                 id="article-search"
                 placeholder="Search article titles..."
+                autocomplete="off"
             >
         </div>
+
+        <button type="button" class="button ghost" id="clear-filters">Clear</button>
 
     </div>
 
 </section>
 
-<section class="card">
+<section class="card" aria-labelledby="article-list-title">
 
     <div class="card-header">
-        <h2 class="card-title">Article List</h2>
-        <span class="card-meta" id="article-result-count">—</span>
+        <h3 class="card-title" id="article-list-title">Article list</h3>
+        <span class="card-meta" id="article-result-count" aria-live="polite">—</span>
     </div>
 
-    <div id="articles-list">
+    <div id="articles-list" class="article-list">
         <div class="empty">Loading articles...</div>
+    </div>
+
+    <div class="load-more" id="articles-more" hidden>
+        <small id="articles-shown"></small>
+        <button type="button" class="button ghost" id="articles-more-button">Show more</button>
     </div>
 
 </section>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/articles.js') }}"></script>

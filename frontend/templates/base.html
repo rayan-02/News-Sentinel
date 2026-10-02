@@ -7,88 +7,93 @@
     <title>{{ titles[page] }} · News Sentinel</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;0,700;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body data-page="{{ page }}">
 
-<div class="app-shell">
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+<div class="shell">
+
+    <header class="masthead">
 
         <div class="brand">
-            <div class="brand-mark">NS</div>
+            <h1>News <em>Sentinel</em></h1>
+            <p>News intelligence from Dawn, Express Tribune, Geo News and Business Recorder.</p>
+        </div>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="sidebar"
+        >
+            Menu
+        </button>
+
+        <div class="masthead-meta">
+            <span class="masthead-kicker">Pakistani news intelligence</span>
+            <span class="masthead-path">news-sentinel / {{ page }}</span>
+
+            {% if updated %}
+            <span class="masthead-updated">data updated {{ updated }} UTC</span>
+            {% endif %}
+        </div>
+
+    </header>
+
+
+    <div class="layout">
+
+        <aside class="sidebar" id="sidebar" aria-label="Sidebar">
+
             <div>
-                <strong>News Sentinel</strong>
-                <small>Pakistani news intelligence</small>
-            </div>
-        </div>
+                <p class="sidebar-title">The 7 screens</p>
 
-        <nav class="sidebar-nav">
-
-            {% for nav_item in nav %}
-            {% set index = loop.index %}
-            <a
-                href="{{ nav_item[2] }}"
-                class="nav-link {% if nav_item[0] == page %}active{% endif %}"
-            >
-                <span class="nav-index">{{ "%02d"|format(index) }}</span>
-                <span>
-                    {{ nav_item[1] }}
-                </span>
-            </a>
-            {% endfor %}
-
-        </nav>
-
-        <div class="sidebar-footer">
-            <div class="status-dot" title="Data pipeline healthy"></div>
-            <span>System online</span>
-        </div>
-
-    </aside>
-
-    <!-- PAGE -->
-    <div class="page-shell">
-
-        <!-- TOPBAR -->
-        <header class="topbar">
-
-            <div class="topbar-meta">
-                <div class="location-label">
-                    news-sentinel / {{ page }}
-                </div>
-
-                {% if updated %}
-                <div class="updated">
-                    data updated {{ updated }} UTC
-                </div>
-                {% endif %}
-
-                <span class="live-badge">
-                    <i></span>
-                    live
-                </span>
+                <nav aria-label="Dashboard pages">
+                    {% for key, label, url in nav %}
+                    <a
+                        href="{{ url }}"
+                        class="nav-link {% if key == page %}active{% endif %}"
+                        {% if key == page %}aria-current="page"{% endif %}
+                    >
+                        <span class="nav-number">{{ "%02d"|format(loop.index) }}</span>
+                        <span>{{ label }}</span>
+                    </a>
+                    {% endfor %}
+                </nav>
             </div>
 
-        </header>
+            <div class="sidebar-foot">
+                <p class="sidebar-title">Sources</p>
+                <ul>
+                    <li>Dawn</li>
+                    <li>Express Tribune</li>
+                    <li>Geo News</li>
+                    <li>Business Recorder</li>
+                </ul>
+            </div>
 
-        <!-- PAGE CONTENT -->
-        <div class="page-content">
+        </aside>
+
+
+        <main class="main-content" id="main">
 
             {% block content %}
             {% endblock %}
 
-        </div>
+        </main>
 
     </div>
 
 </div>
 
-<script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
 {% block scripts %}{% endblock %}
 

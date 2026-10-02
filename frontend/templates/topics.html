@@ -2,32 +2,36 @@
 
 {% block content %}
 
-<div id="topics-error" class="error" hidden></div>
+<div id="topics-error" class="error" role="alert" hidden></div>
 
 <div class="page-intro">
     <div>
-        <p class="eyebrow">CLUSTER ANALYSIS</p>
-        <h2>Detected Topics</h2>
+        <p class="eyebrow">Cluster analysis</p>
+        <h2>Detected topics</h2>
         <p>
             Groups of articles identified through semantic similarity and
             represented by their most distinctive terms and phrases.
         </p>
     </div>
 
-    <div class="topic-count" id="topic-count">
+    <div class="count-stamp" id="topic-count" aria-live="polite">
         —
     </div>
 </div>
 
-<section class="topic-grid" id="topics-grid">
+
+<section class="topic-grid" id="topics-grid" aria-label="Topic cards">
+
     <div class="loading-card">
         <div class="loading-line large"></div>
         <div class="loading-line"></div>
         <div class="loading-line short"></div>
     </div>
+
 </section>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/topics.js') }}"></script>

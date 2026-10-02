@@ -1,163 +1,152 @@
-const chartBox = document.getElementById("trend-chart");
-const tableBox = document.getElementById("trend-table");
-const errorBox = document.getElementById("trends-error");
+/* Trends page: reads /api/trends. */
 
-async function loadTrends() {
-    try {
-        const response = await fetch("/api/trends");
+(function () {
+    "use strict";
 
-        if (!response.ok) {
-            throw new Error("trends.json could not be loaded");
+    const {
+        escapeHTML, fetchJSON, formatNumber, formatDay, topicName, emptyState, showError,
+        createLineChart, renderLegend, sparkline, PALETTE
+    } = window.NS;
+
+    const chartBox = document.getElementById("trend-chart");
+    const legendBox = document.getElementById("trend-legend");
+    const tableBox = document.getElementById("trend-table");
+    const errorBox = document.getElementById("trends-error");
+    const rangeBox = document.getElementById("trend-range");
+    const metricNote = document.getElementById("trend-metric-note");
+    const metricSwitch = document.getElementById("metric-switch");
+
+    const METRIC_LABELS = {
+        counts: "Daily article counts",
+        rolling_3d: "3-day rolling average",
+        rolling_7d: "7-day rolling average"
+    };
+
+
+    function last(values) {
+        const number = Number((values || []).at(-1));
+        return Number.isFinite(number) ? number : 0;
+    }
+
+    function sum(values) {
+        return (values || []).reduce((total, value) => total + (Number(value) || 0), 0);
+    }
+
+    async function loadTrends() {
+        try {
+            const data = await fetchJSON("trends");
+
+            const days = data.days || [];
+            const series = (data.series || []).map((item, index) => ({
+                ...item,
+                id: String(item.cluster_id),
+                name: topicName(item),
+                color: PALETTE[index % PALETTE.length]
+            }));
+
+            renderRange(days);
+
+            if (!days.length || !series.length) {
+                chartBox.innerHTML = emptyState("No topic trends were found.");
+                tableBox.innerHTML = emptyState("No trend details were found.");
+                return;
+            }
+
+            renderChart(days, series);
+            renderTable(series);
+
+        } catch (error) {
+            console.error(error);
+
+            showError(errorBox, `Trend data could not be loaded: ${error.message}`);
+
+            chartBox.innerHTML = emptyState("No trend data is currently available.");
+            tableBox.innerHTML = emptyState("No trend details are currently available.");
         }
-
-        const data = await response.json();
-
-        renderTrendChart(data);
-        renderTrendTable(data);
-
-    } catch (error) {
-        console.error(error);
-
-        errorBox.textContent = `Trend data could not be loaded: ${error.message}`;
-        errorBox.hidden = false;
-
-        chartBox.innerHTML = `
-            <div class="empty">
-                No trend data is currently available.
-            </div>
-        `;
-
-        tableBox.innerHTML = `
-            <div class="empty">
-                No trend details are currently available.
-            </div>
-        `;
-    }
-}
-
-function renderTrendChart(data) {
-    const series = data.series || [];
-
-    if (!series.length) {
-        chartBox.innerHTML = `
-            <div class="empty">
-                No topic trends were found.
-            </div>
-        `;
-        return;
     }
 
-    const rows = series
-        .map(item => {
-            const values = item.rolling_3d || [];
-            const latest = Number(values[values.length - 1] || 0);
-
-            return {
-                label: item.label || `Topic ${item.cluster_id}`,
-                value: latest
-            };
-        })
-        .sort((a, b) => b.value - a.value);
-
-    const maxValue = Math.max(
-        ...rows.map(row => row.value),
-        1
-    );
-
-    chartBox.innerHTML = rows.map(row => `
-        <div class="trend-row">
-
-            <div class="trend-label">
-                <span>${escapeHTML(row.label)}</span>
-                <span>${row.value.toFixed(2)}</span>
-            </div>
-
-            <div class="track">
-                <div
-                    class="fill"
-                    style="width:${row.value / maxValue * 100}%"
-                ></div>
-            </div>
-
-        </div>
-    `).join("");
-}
-
-function renderTrendTable(data) {
-    const series = data.series || [];
-
-    if (!series.length) {
-        tableBox.innerHTML = `
-            <div class="empty">
-                No trend details were found.
-            </div>
-        `;
-        return;
+    function renderRange(days) {
+        rangeBox.textContent = days.length
+            ? `${formatDay(days[0])} \u2013 ${formatDay(days.at(-1))} \u00B7 ${days.length} days`
+            : "\u2014";
     }
 
-    tableBox.innerHTML = series.map(item => {
-        const counts = item.counts || [];
-        const rolling3 = item.rolling_3d || [];
-        const rolling7 = item.rolling_7d || [];
+    function renderChart(days, series) {
+        const ordered = [...series].sort((a, b) => last(b.rolling_3d) - last(a.rolling_3d));
 
-        const latestCount = Number(
-            counts[counts.length - 1] || 0
-        );
+        const chartSeries = ordered.map(item => ({
+            id: item.id,
+            label: item.name,
+            values: item.rolling_3d || [],
+            color: item.color
+        }));
 
-        const latest3 = Number(
-            rolling3[rolling3.length - 1] || 0
-        );
+        chartBox.innerHTML = "";
 
-        const latest7 = Number(
-            rolling7[rolling7.length - 1] || 0
-        );
+        const chart = createLineChart(chartBox, {
+            days,
+            series: chartSeries,
+            label: "Line chart of article activity per topic over time"
+        });
 
-        return `
-            <div class="article-row">
+        renderLegend(legendBox, chart, chartSeries);
 
-                <div>
-                    <strong class="article-title">
-                        ${escapeHTML(
-                            item.label || `Topic ${item.cluster_id}`
-                        )}
-                    </strong>
+        metricSwitch.querySelectorAll("button").forEach(button => {
+            button.addEventListener("click", () => {
+                const metric = button.dataset.metric;
+                const next = {};
 
-                    <div class="article-meta">
-                        <span class="article-tag">
-                            Topic ${item.cluster_id}
-                        </span>
+                ordered.forEach(item => { next[item.id] = item[metric] || []; });
 
-                        <span class="article-tag">
-                            Latest: ${latestCount} articles
-                        </span>
+                chart.setSeries(next);
+
+                metricSwitch.querySelectorAll("button").forEach(other =>
+                    other.setAttribute("aria-pressed", String(other === button)));
+
+                metricNote.textContent = METRIC_LABELS[metric];
+            });
+        });
+    }
+
+    function renderTable(series) {
+        const ordered = [...series].sort((a, b) => last(b.rolling_3d) - last(a.rolling_3d));
+
+        tableBox.innerHTML = ordered.map(item => `
+            <div class="trend-row">
+
+                <div class="trend-name">
+                    <span class="trend-dot" style="--c:${item.color}"></span>
+
+                    <div>
+                        <strong>${escapeHTML(item.name)}</strong>
+
+                        <div class="article-meta">
+                            <span class="article-tag">Topic ${escapeHTML(item.cluster_id)}</span>
+                            <span class="article-tag">Latest day: ${formatNumber(last(item.counts))} articles</span>
+                            <span class="article-tag">In period: ${formatNumber(sum(item.counts))}</span>
+                        </div>
                     </div>
+                </div>
+
+                <div style="color:${item.color}">
+                    ${sparkline(item.counts, item.color)}
                 </div>
 
                 <div class="trend-values">
                     <div>
                         <small>3-day</small>
-                        <strong>${latest3.toFixed(2)}</strong>
+                        <strong>${last(item.rolling_3d).toFixed(2)}</strong>
                     </div>
 
                     <div>
                         <small>7-day</small>
-                        <strong>${latest7.toFixed(2)}</strong>
+                        <strong>${last(item.rolling_7d).toFixed(2)}</strong>
                     </div>
                 </div>
 
             </div>
-        `;
-    }).join("");
-}
+        `).join("");
+    }
 
-function escapeHTML(value) {
-    return String(value ?? "").replace(/[&<>"']/g, character => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#039;"
-    }[character]));
-}
-
-document.addEventListener("DOMContentLoaded", loadTrends);
+    document.addEventListener("DOMContentLoaded", loadTrends);
+})();

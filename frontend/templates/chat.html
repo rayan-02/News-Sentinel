@@ -4,28 +4,46 @@
 
 <div class="page-intro">
     <div>
-        <p class="eyebrow">RETRIEVAL AUGMENTED GENERATION</p>
-        <h2>AI Chat</h2>
+        <p class="eyebrow">Retrieval augmented generation</p>
+        <h2>AI chat</h2>
         <p>
             Ask questions about the Pakistani news dataset and its analysis.
+            Answers will come only from articles the assistant actually retrieved.
         </p>
     </div>
 
-    <span class="badge">PLANNED</span>
+    <span class="badge">Planned</span>
 </div>
+
+
+<section class="card accent" aria-labelledby="flow-title">
+
+    <div class="card-header">
+        <h3 class="card-title" id="flow-title">How it will work</h3>
+        <span class="card-meta">Planned design, not yet connected</span>
+    </div>
+
+    <ol class="flow">
+        <li>Question</li>
+        <li>Turn it into an embedding</li>
+        <li>Find the closest articles</li>
+        <li>LLM writes from them only</li>
+        <li>Answer + source links</li>
+    </ol>
+
+</section>
+
 
 <section class="chat-layout">
 
     <div class="card chat-card">
 
         <div class="card-header">
-            <div>
-                <h2 class="card-title">News Sentinel Assistant</h2>
-                <span class="card-meta">Dataset-aware question answering</span>
-            </div>
+            <h3 class="card-title">News Sentinel assistant</h3>
+            <span class="card-meta">Dataset-aware question answering</span>
         </div>
 
-        <div id="chat-messages" class="chat-messages">
+        <div id="chat-messages" class="chat-messages" aria-live="polite">
             <div class="chat-message assistant">
                 <span class="chat-role">ASSISTANT</span>
                 <p>
@@ -35,7 +53,19 @@
             </div>
         </div>
 
+        <div>
+            <p class="label prompt-label">Example questions</p>
+
+            <div class="prompt-examples" aria-hidden="true">
+                <button type="button" disabled tabindex="-1">What are the main topics today?</button>
+                <button type="button" disabled tabindex="-1">Which outlets cover the economy most?</button>
+                <button type="button" disabled tabindex="-1">Show related stories on this topic</button>
+            </div>
+        </div>
+
         <form id="chat-form" class="chat-form">
+
+            <label class="sr-only" for="chat-input">Ask about the analyzed news</label>
 
             <input
                 type="text"
@@ -44,7 +74,7 @@
                 disabled
             >
 
-            <button type="submit" disabled>
+            <button type="submit" class="button" disabled>
                 Send
             </button>
 
@@ -55,13 +85,13 @@
     <aside class="card chat-info">
 
         <div class="card-header">
-            <h2 class="card-title">About the Assistant</h2>
+            <h3 class="card-title">About the assistant</h3>
         </div>
 
         <p>
             The planned assistant will use the processed news articles,
             embeddings and analysis results to answer questions with
-            dataset-based context.
+            dataset-based context, and cite the articles it used.
         </p>
 
         <div class="info-list">
@@ -86,6 +116,7 @@
 </section>
 
 {% endblock %}
+
 
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/chat.js') }}"></script>

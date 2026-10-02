@@ -1,55 +1,44 @@
-const chatForm = document.getElementById("chat-form");
-const chatInput = document.getElementById("chat-input");
-const chatMessages = document.getElementById("chat-messages");
+/* AI Chat page: the RAG backend is not connected yet.
+   The form is disabled in chat.html; this handler keeps the page honest if it is enabled early. */
 
-function addMessage(role, message) {
-    const wrapper = document.createElement("div");
+(function () {
+    "use strict";
 
-    wrapper.className =
-        `chat-message ${role}`;
+    const { escapeHTML } = window.NS;
 
-    const label =
-        role === "user"
-            ? "YOU"
-            : "ASSISTANT";
+    const chatForm = document.getElementById("chat-form");
+    const chatInput = document.getElementById("chat-input");
+    const chatMessages = document.getElementById("chat-messages");
 
-    wrapper.innerHTML = `
-        <span class="chat-role">${label}</span>
-        <p>${escapeHTML(message)}</p>
-    `;
 
-    chatMessages.appendChild(wrapper);
+    function addMessage(role, message) {
+        const wrapper = document.createElement("div");
 
-    chatMessages.scrollTop =
-        chatMessages.scrollHeight;
-}
+        wrapper.className = `chat-message ${role}`;
+        wrapper.innerHTML = `
+            <span class="chat-role">${role === "user" ? "YOU" : "ASSISTANT"}</span>
+            <p>${escapeHTML(message)}</p>
+        `;
 
-function escapeHTML(value) {
-    return String(value ?? "").replace(/[&<>"']/g, character => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#039;"
-    }[character]));
-}
-
-chatForm.addEventListener("submit", event => {
-    event.preventDefault();
-
-    const message =
-        chatInput.value.trim();
-
-    if (!message) {
-        return;
+        chatMessages.appendChild(wrapper);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 
-    addMessage("user", message);
+    chatForm.addEventListener("submit", event => {
+        event.preventDefault();
 
-    chatInput.value = "";
+        const message = chatInput.value.trim();
 
-    addMessage(
-        "assistant",
-        "The RAG chatbot is not connected yet. The retrieval and question-answering backend will be added in the next stage."
-    );
-});
+        if (!message) {
+            return;
+        }
+
+        addMessage("user", message);
+        chatInput.value = "";
+
+        addMessage(
+            "assistant",
+            "The RAG chatbot is not connected yet. The retrieval and question-answering backend will be added in the next stage."
+        );
+    });
+})();
