@@ -1,387 +1,458 @@
 {
   "topics": [
     {
-      "cluster_id": 6,
-      "label": "saudi, saudi arabia, arabia",
-      "topic_name": "Topic 6",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 123,
-      "share_of_articles": 0.16057441253263707,
-      "keywords": {},
-      "phrases": {},
-      "sentiment_counts": {
-        "Negative": 92,
-        "Positive": 28,
-        "Neutral": 3
-      },
-      "avg_sentiment": -0.5042918699186992,
-      "sources": {
-        "Dawn": 39,
-        "Express Tribune": 34,
-        "Geo News": 29,
-        "Business Recorder": 21
-      },
-      "sample_articles": [
-        {
-          "title": "4 Pakistani crew members from hijacked oil tanker to arrive in Karachi tomorrow: DPM Dar",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034247/4-pakistani-crew-members-from-hijacked-oil-tanker-to-arrive-in-karachi-tomorrow-dpm-dar"
-        },
-        {
-          "title": "Saudi Arabia denies reports of suicide bomber at Grand Mosque in Makkah",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034240/saudi-arabia-denies-reports-of-suicide-bomber-at-grand-mosque-in-makkah"
-        },
-        {
-          "title": "7 terrorists eliminated in KP’s North Waziristan IBO: state media",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034223/7-terrorists-eliminated-in-kps-north-waziristan-ibo-state-media"
-        },
-        {
-          "title": "'Grave provocation': Pakistan condemns Houthi attack on power facility in Madina",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034209/grave-provocation-pakistan-condemns-houthi-attack-on-power-facility-in-madina"
-        },
-        {
-          "title": "Two passenger trains escape major accidents after derailment in Punjab",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034077/two-passenger-trains-escape-major-accidents-after-derailment-in-punjab"
-        }
-      ]
-    },
-    {
-      "cluster_id": 0,
+      "cluster_id": 3,
       "label": "game, team, match",
-      "topic_name": "Topic 0",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 111,
-      "share_of_articles": 0.14490861618798956,
-      "keywords": {},
-      "phrases": {},
+      "topic_name": "game, team, match",
+      "topic_description": "",
+      "article_count": 113,
+      "share_of_articles": 0.1454,
+      "keywords": [
+        "game",
+        "team",
+        "match",
+        "player",
+        "asian game",
+        "minute",
+        "cup",
+        "asian"
+      ],
+      "phrases": [
+        "asian game",
+        "world cup",
+        "quarter final",
+        "nation league",
+        "south africa"
+      ],
+      "avg_sentiment": 0.6036,
       "sentiment_counts": {
-        "Positive": 90,
-        "Negative": 21
+        "Positive": 92,
+        "Negative": 21,
+        "Neutral": 0
       },
-      "avg_sentiment": 0.6036945945945945,
       "sources": {
         "Express Tribune": 61,
-        "Geo News": 25,
+        "Geo News": 26,
         "Business Recorder": 21,
-        "Dawn": 4
+        "Dawn": 5
       },
       "sample_articles": [
         {
-          "title": "Lamine nets double as Spain win again and England beat 10-man Czechs",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441978/lamine-nets-double-as-spain-win-again-and-england-beat-10-man-czechs"
+          "title": "Asian Games: Pakistan settle for squash silver as Iran end volleyball run",
+          "url": "https://www.dawn.com/news/2034252/asian-games-pakistan-settle-for-squash-silver-as-iran-end-volleyball-run",
+          "source": "Dawn",
+          "date": "2026-10-02"
         },
         {
           "title": "South Africa look to gather momentum in ODI series with World Cup looming",
+          "url": "https://www.brecorder.com/news/40441977/south-africa-look-to-gather-momentum-in-odi-series-with-world-cup-looming",
           "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441977/south-africa-look-to-gather-momentum-in-odi-series-with-world-cup-looming"
+          "date": "2026-09-30"
         },
         {
-          "title": "Pakistan clinch eSports bronze at Asian Games",
+          "title": "Lamine nets double as Spain win again and England beat 10-man Czechs",
+          "url": "https://www.brecorder.com/news/40441978/lamine-nets-double-as-spain-win-again-and-england-beat-10-man-czechs",
           "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441801/pakistan-clinch-esports-bronze-at-asian-games"
-        },
-        {
-          "title": "Nagoya organisers regret Pakistan and South Korea travel mix-ups",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441796/nagoya-organisers-regret-pakistan-and-south-korea-travel-mix-ups"
-        },
-        {
-          "title": "Asian Games: Arshad Nadeem finishes fourth as Rumesh Pathirage strikes javelin gold in rainy Nagoya",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033295/asian-games-arshad-nadeem-finishes-fourth-as-rumesh-pathirage-strikes-javelin-gold-in-rainy-nagoya"
-        }
-      ]
-    },
-    {
-      "cluster_id": 4,
-      "label": "company, model, india",
-      "topic_name": "Topic 4",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 104,
-      "share_of_articles": 0.13577023498694518,
-      "keywords": {},
-      "phrases": {},
-      "sentiment_counts": {
-        "Positive": 72,
-        "Negative": 32
-      },
-      "avg_sentiment": 0.3350009615384616,
-      "sources": {
-        "Express Tribune": 38,
-        "Geo News": 32,
-        "Business Recorder": 28,
-        "Dawn": 6
-      },
-      "sample_articles": [
-        {
-          "title": "New islands appear after Indonesia's Anak Krakatau volcano erupts",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034235/new-islands-appear-after-indonesias-anak-krakatau-volcano-erupts"
-        },
-        {
-          "title": "Prince Harry's children targeted by 'European paparazzi' while at school in England",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441997/prince-harrys-children-targeted-by-european-paparazzi-while-at-school-in-england"
-        },
-        {
-          "title": "Apple plans to launch new smart-home hub on Oct 13, reports",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441994/apple-plans-to-launch-new-smart-home-hub-on-oct-13-reports"
-        },
-        {
-          "title": "Would-be Taylor Swift concert attacker loses privacy case against Disney",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441990/would-be-taylor-swift-concert-attacker-loses-privacy-case-against-disney"
-        },
-        {
-          "title": "India records lowest monsoon rainfall in more than a decade",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441988/india-records-lowest-monsoon-rainfall-in-more-than-a-decade"
+          "date": "2026-09-30"
         }
       ]
     },
     {
       "cluster_id": 5,
-      "label": "tax, fbr, investment",
-      "topic_name": "Topic 5",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 93,
-      "share_of_articles": 0.12140992167101827,
-      "keywords": {},
-      "phrases": {},
+      "label": "model, agent, human",
+      "topic_name": "model, agent, human",
+      "topic_description": "",
+      "article_count": 109,
+      "share_of_articles": 0.1403,
+      "keywords": [
+        "model",
+        "agent",
+        "human",
+        "trump",
+        "company",
+        "openai",
+        "school",
+        "india"
+      ],
+      "phrases": [
+        "year old",
+        "social medium",
+        "view post instagram",
+        "post instagram",
+        "view post"
+      ],
+      "avg_sentiment": 0.2747,
       "sentiment_counts": {
-        "Positive": 77,
-        "Negative": 16
+        "Positive": 72,
+        "Negative": 37,
+        "Neutral": 0
       },
-      "avg_sentiment": 0.6013720430107526,
       "sources": {
-        "Business Recorder": 47,
-        "Geo News": 19,
-        "Dawn": 17,
-        "Express Tribune": 10
+        "Express Tribune": 41,
+        "Geo News": 34,
+        "Business Recorder": 27,
+        "Dawn": 7
       },
       "sample_articles": [
         {
-          "title": "Lahore ranked as the most polluted city in the world, again",
+          "title": "Hundreds of French high schools shut as new violence erupts",
+          "url": "https://www.dawn.com/news/2034254/hundreds-of-french-high-schools-shut-as-new-violence-erupts",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034227/lahore-ranked-as-the-most-polluted-city-in-the-world-again"
+          "date": "2026-10-02"
         },
         {
-          "title": "Govt defends decision to buy 45 bulletproof vehicles for SCO moot, says available 2016 models 'far below' standards",
+          "title": "New islands appear after Indonesia's Anak Krakatau volcano erupts",
+          "url": "https://www.dawn.com/news/2034235/new-islands-appear-after-indonesias-anak-krakatau-volcano-erupts",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033788/govt-defends-decision-to-buy-45-bulletproof-vehicles-for-sco-moot-says-available-2016-models-far-below-standards"
+          "date": "2026-10-02"
         },
         {
-          "title": "FBR extends deadline for filing income tax returns to Oct 15",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033760/fbr-extends-deadline-for-filing-income-tax-returns-to-oct-15"
-        },
-        {
-          "title": "IGI Holdings acquires Akzo Nobel",
+          "title": "Prince Harry's children targeted by 'European paparazzi' while at school in England",
+          "url": "https://www.brecorder.com/news/40441997/prince-harrys-children-targeted-by-european-paparazzi-while-at-school-in-england",
           "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441998/igi-holdings-acquires-akzo-nobel"
-        },
-        {
-          "title": "Pakistan assembles 18.66m mobile handsets in 8 months of 2026",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441993/pakistan-assembles-1866m-mobile-handsets-in-8-months-of-2026"
-        }
-      ]
-    },
-    {
-      "cluster_id": 7,
-      "label": "pti, party, march",
-      "topic_name": "Topic 7",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 92,
-      "share_of_articles": 0.12010443864229765,
-      "keywords": {},
-      "phrases": {},
-      "sentiment_counts": {
-        "Positive": 48,
-        "Negative": 44
-      },
-      "avg_sentiment": 0.05201739130434784,
-      "sources": {
-        "Dawn": 33,
-        "Geo News": 29,
-        "Express Tribune": 18,
-        "Business Recorder": 12
-      },
-      "sample_articles": [
-        {
-          "title": "Talks between govt, opposition underway as PTI’s Oct 4 protest looms over federal capital",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034249/talks-between-govt-opposition-underway-as-ptis-oct-4-protest-looms-over-federal-capital"
-        },
-        {
-          "title": "TTAP invites JI to multiparty moot, urges political parties to hold consultations",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034243/ttap-invites-ji-to-multiparty-moot-urges-political-parties-to-hold-consultations"
-        },
-        {
-          "title": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034218/indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation"
-        },
-        {
-          "title": "Govt to engage PTI in talks to find way out of turmoil",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034165/govt-to-engage-pti-in-talks-to-find-way-out-of-turmoil"
-        },
-        {
-          "title": "PPP to join govt representatives as Shehbaz-Zardari meeting yields Friday talks with opposition",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033967/ppp-to-join-govt-representatives-as-shehbaz-zardari-meeting-yields-friday-talks-with-opposition"
+          "date": "2026-09-30"
         }
       ]
     },
     {
       "cluster_id": 2,
-      "label": "price, oil, rupee",
-      "topic_name": "Topic 2",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 89,
-      "share_of_articles": 0.11618798955613577,
-      "keywords": {},
-      "phrases": {},
+      "label": "police, terrorist, killed",
+      "topic_name": "police, terrorist, killed",
+      "topic_description": "",
+      "article_count": 106,
+      "share_of_articles": 0.1364,
+      "keywords": [
+        "police",
+        "terrorist",
+        "killed",
+        "force",
+        "operation",
+        "crew",
+        "saudi",
+        "attack"
+      ],
+      "phrases": [
+        "saudi arabia",
+        "security force",
+        "crew member",
+        "prime minister",
+        "rescue 1122"
+      ],
+      "avg_sentiment": -0.5439,
       "sentiment_counts": {
-        "Positive": 55,
-        "Negative": 34
+        "Positive": 22,
+        "Negative": 84,
+        "Neutral": 0
       },
-      "avg_sentiment": 0.14763258426966291,
       "sources": {
-        "Business Recorder": 72,
+        "Dawn": 34,
+        "Express Tribune": 31,
+        "Geo News": 22,
+        "Business Recorder": 19
+      },
+      "sample_articles": [
+        {
+          "title": "4 Pakistani crew members from hijacked oil tanker to arrive in Karachi tomorrow: DPM Dar",
+          "url": "https://www.dawn.com/news/2034247/4-pakistani-crew-members-from-hijacked-oil-tanker-to-arrive-in-karachi-tomorrow-dpm-dar",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        },
+        {
+          "title": "'Grave provocation': Pakistan condemns Houthi attack on power facility in Madina",
+          "url": "https://www.dawn.com/news/2034209/grave-provocation-pakistan-condemns-houthi-attack-on-power-facility-in-madina",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        },
+        {
+          "title": "Two passenger trains escape major accidents after derailment in Punjab",
+          "url": "https://www.dawn.com/news/2034077/two-passenger-trains-escape-major-accidents-after-derailment-in-punjab",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "label": "tax, investment, fbr",
+      "topic_name": "tax, investment, fbr",
+      "topic_description": "",
+      "article_count": 105,
+      "share_of_articles": 0.1351,
+      "keywords": [
+        "tax",
+        "investment",
+        "fbr",
+        "business",
+        "meeting",
+        "india",
+        "company",
+        "water"
+      ],
+      "phrases": [
+        "prime minister",
+        "world bank",
+        "tax return",
+        "income tax",
+        "stock exchange"
+      ],
+      "avg_sentiment": 0.5536,
+      "sentiment_counts": {
+        "Positive": 83,
+        "Negative": 22,
+        "Neutral": 0
+      },
+      "sources": {
+        "Business Recorder": 54,
+        "Geo News": 20,
+        "Dawn": 19,
+        "Express Tribune": 12
+      },
+      "sample_articles": [
+        {
+          "title": "Lahore ranked as the most polluted city in the world, again",
+          "url": "https://www.dawn.com/news/2034227/lahore-ranked-as-the-most-polluted-city-in-the-world-again",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        },
+        {
+          "title": "Pakistan’s banknote paper maker SPL resumes normal operations after major upgrade",
+          "url": "https://www.brecorder.com/news/40441985/pakistans-banknote-paper-maker-spl-resumes-normal-operations-after-major-upgrade",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Japan to study putting government bond transactions on blockchain",
+          "url": "https://www.brecorder.com/news/40441969/japan-to-study-putting-government-bond-transactions-on-blockchain",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "label": "price, oil, rupee",
+      "topic_name": "price, oil, rupee",
+      "topic_description": "",
+      "article_count": 92,
+      "share_of_articles": 0.1184,
+      "keywords": [
+        "price",
+        "oil",
+        "rupee",
+        "dollar",
+        "bank",
+        "per",
+        "market",
+        "bond"
+      ],
+      "phrases": [
+        "oil price",
+        "middle east",
+        "central bank",
+        "per tola",
+        "per litre"
+      ],
+      "avg_sentiment": 0.1343,
+      "sentiment_counts": {
+        "Positive": 56,
+        "Negative": 36,
+        "Neutral": 0
+      },
+      "sources": {
+        "Business Recorder": 73,
         "Express Tribune": 9,
-        "Geo News": 5,
+        "Geo News": 7,
         "Dawn": 3
       },
       "sample_articles": [
         {
           "title": "Govt reduces petrol price by Re0.14 per litre, high-speed diesel rate by Rs1.89",
+          "url": "https://www.dawn.com/news/2033780/govt-reduces-petrol-price-by-re014-per-litre-high-speed-diesel-rate-by-rs189",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033780/govt-reduces-petrol-price-by-re014-per-litre-high-speed-diesel-rate-by-rs189"
+          "date": "2026-09-30"
+        },
+        {
+          "title": "Gold price gains Rs4,300 per tola in Pakistan",
+          "url": "https://www.brecorder.com/news/40441981/gold-price-drops-by-rs2700-per-tola-in-pakistan",
+          "source": "Business Recorder",
+          "date": "2026-09-30"
         },
         {
           "title": "State Bank of India buys nearly 40% of Reliance's $1.35 billion debt sale",
+          "url": "https://www.brecorder.com/news/40441995/state-bank-of-india-buys-nearly-40-of-reliances-135-billion-debt-sale",
           "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441995/state-bank-of-india-buys-nearly-40-of-reliances-135-billion-debt-sale"
-        },
-        {
-          "title": "Rupee records gain against US dollar",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441989/intra-day-update-rupee-records-gain-against-us-dollar"
-        },
-        {
-          "title": "India benchmark shares log worst month since March as oil, global rate hikes spark outflows",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441987/india-benchmark-shares-log-worst-month-since-march-as-oil-global-rate-hikes-spark-outflows"
-        },
-        {
-          "title": "Copper climbs on China factory data, heads for third-straight monthly gain",
-          "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441986/copper-climbs-on-china-factory-data-heads-for-third-straight-monthly-gain"
+          "date": "2026-09-30"
         }
       ]
     },
     {
-      "cluster_id": 3,
-      "label": "iran, trump, iranian",
-      "topic_name": "Topic 3",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 81,
-      "share_of_articles": 0.10574412532637076,
-      "keywords": {},
-      "phrases": {},
+      "cluster_id": 7,
+      "label": "pti, party, government",
+      "topic_name": "pti, party, government",
+      "topic_description": "",
+      "article_count": 89,
+      "share_of_articles": 0.1145,
+      "keywords": [
+        "pti",
+        "party",
+        "government",
+        "march",
+        "afridi",
+        "opposition",
+        "punjab",
+        "political"
+      ],
+      "phrases": [
+        "chief minister",
+        "long march",
+        "prime minister",
+        "federal government",
+        "governor rule"
+      ],
+      "avg_sentiment": 0.0767,
       "sentiment_counts": {
-        "Negative": 55,
-        "Positive": 26
+        "Positive": 48,
+        "Negative": 41,
+        "Neutral": 0
       },
-      "avg_sentiment": -0.32298518518518515,
       "sources": {
-        "Business Recorder": 24,
-        "Geo News": 20,
-        "Express Tribune": 20,
-        "Dawn": 17
+        "Dawn": 32,
+        "Geo News": 29,
+        "Express Tribune": 17,
+        "Business Recorder": 11
+      },
+      "sample_articles": [
+        {
+          "title": "First round of talks between govt, opposition end as PTI’s Oct 4 protest looms over federal capital",
+          "url": "https://www.dawn.com/news/2034249/first-round-of-talks-between-govt-opposition-end-as-ptis-oct-4-protest-looms-over-federal-capital",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        },
+        {
+          "title": "TTAP invites JI to multiparty moot, urges political parties to hold consultations",
+          "url": "https://www.dawn.com/news/2034243/ttap-invites-ji-to-multiparty-moot-urges-political-parties-to-hold-consultations",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        },
+        {
+          "title": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
+          "url": "https://www.dawn.com/news/2034218/indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation",
+          "source": "Dawn",
+          "date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "label": "iran, saudi, saudi arabia",
+      "topic_name": "iran, saudi, saudi arabia",
+      "topic_description": "",
+      "article_count": 87,
+      "share_of_articles": 0.112,
+      "keywords": [
+        "iran",
+        "saudi",
+        "saudi arabia",
+        "iranian",
+        "arabia",
+        "trump",
+        "strait",
+        "oil"
+      ],
+      "phrases": [
+        "saudi arabia",
+        "strait hormuz",
+        "united state",
+        "prime minister",
+        "middle east"
+      ],
+      "avg_sentiment": -0.2791,
+      "sentiment_counts": {
+        "Positive": 30,
+        "Negative": 54,
+        "Neutral": 3
+      },
+      "sources": {
+        "Business Recorder": 23,
+        "Dawn": 22,
+        "Geo News": 21,
+        "Express Tribune": 21
       },
       "sample_articles": [
         {
           "title": "Modi speaks with Trump as India seeks interim deal with US",
+          "url": "https://www.dawn.com/news/2033785/modi-speaks-with-trump-as-india-seeks-interim-deal-with-us",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033785/modi-speaks-with-trump-as-india-seeks-interim-deal-with-us"
+          "date": "2026-09-30"
         },
         {
           "title": "Iran says it receives US response to latest proposal as Washington pulls out of Iraq",
+          "url": "https://www.brecorder.com/news/40441992/iran-says-it-receives-us-response-to-latest-proposal-as-washington-pulls-out-of-iraq",
           "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441992/iran-says-it-receives-us-response-to-latest-proposal-as-washington-pulls-out-of-iraq"
+          "date": "2026-09-30"
         },
         {
           "title": "Iran receives US feedback on seven-day trust-building plan",
+          "url": "https://www.brecorder.com/news/40441974/iran-receives-us-feedback-on-seven-day-trust-building-plan",
           "source": "Business Recorder",
-          "url": "https://www.brecorder.com/news/40441974/iran-receives-us-feedback-on-seven-day-trust-building-plan"
-        },
-        {
-          "title": "Iraq PM hails new era of 'sovereignty' after US-led coalition exit",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033700/iraq-pm-hails-new-era-of-sovereignty-after-us-led-coalition-exit"
-        },
-        {
-          "title": "Ahead of deal on Hormuz, US and Iran ramp up the rhetoric again",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033667/ahead-of-deal-on-hormuz-us-and-iran-ramp-up-the-rhetoric-again"
+          "date": "2026-09-30"
         }
       ]
     },
     {
       "cluster_id": 1,
       "label": "police, suspect, case",
-      "topic_name": "Topic 1",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 73,
-      "share_of_articles": 0.09530026109660575,
-      "keywords": {},
-      "phrases": {},
+      "topic_name": "police, suspect, case",
+      "topic_description": "",
+      "article_count": 76,
+      "share_of_articles": 0.0978,
+      "keywords": [
+        "police",
+        "suspect",
+        "case",
+        "woman",
+        "court",
+        "lahore",
+        "remand",
+        "inquiry"
+      ],
+      "phrases": [
+        "year old",
+        "police station",
+        "physical remand",
+        "mobile phone",
+        "pti leader"
+      ],
+      "avg_sentiment": -0.7509,
       "sentiment_counts": {
-        "Negative": 65,
-        "Positive": 8
+        "Positive": 8,
+        "Negative": 68,
+        "Neutral": 0
       },
-      "avg_sentiment": -0.7431643835616439,
       "sources": {
         "Dawn": 33,
-        "Geo News": 19,
-        "Express Tribune": 17,
+        "Geo News": 23,
+        "Express Tribune": 16,
         "Business Recorder": 4
       },
       "sample_articles": [
         {
           "title": "Lady cop attempts suicide over forced marriage, torture",
+          "url": "https://www.dawn.com/news/2034064/lady-cop-attempts-suicide-over-forced-marriage-torture",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034064/lady-cop-attempts-suicide-over-forced-marriage-torture"
+          "date": "2026-10-02"
         },
         {
           "title": "Suspect in girl’s rape case ‘killed by accomplices’ in Gujranwala",
+          "url": "https://www.dawn.com/news/2034076/suspect-in-girls-rape-case-killed-by-accomplices-in-gujranwala",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034076/suspect-in-girls-rape-case-killed-by-accomplices-in-gujranwala"
+          "date": "2026-10-02"
         },
         {
           "title": "Adjournment motion raps Lesco for ‘systematic corruption’",
+          "url": "https://www.dawn.com/news/2034074/adjournment-motion-raps-lesco-for-systematic-corruption",
           "source": "Dawn",
-          "url": "https://www.dawn.com/news/2034074/adjournment-motion-raps-lesco-for-systematic-corruption"
-        },
-        {
-          "title": "UN experts call for immediate release of Imaan and Hadi, dropping 'unfounded charges' against the couple",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033782/un-experts-call-for-immediate-release-of-imaan-and-hadi-dropping-unfounded-charges-against-the-couple"
-        },
-        {
-          "title": "Punjab rolls out 33 mobile police stations offering 14 services, including FIR registration",
-          "source": "Dawn",
-          "url": "https://www.dawn.com/news/2033764/punjab-rolls-out-33-mobile-police-stations-offering-14-services-including-fir-registration"
+          "date": "2026-10-02"
         }
       ]
     }

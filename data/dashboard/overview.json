@@ -1,69 +1,162 @@
 {
-  "total_articles": 766,
-  "total_topics": 8,
-  "sources": 4,
-  "sentiment": {
-    "Positive": 404,
-    "Negative": 359,
-    "Neutral": 3
+  "stats": {
+    "articles": 777,
+    "topics": 8,
+    "emerging": 0,
+    "sources": 4
   },
-  "topics": [
+  "date_range": {
+    "from": "2026-03-24",
+    "to": "2026-10-02"
+  },
+  "topic_sizes": [
     {
-      "cluster_id": 6,
-      "label": "saudi, saudi arabia, arabia",
-      "topic_name": "Topic 6",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 123
-    },
-    {
-      "cluster_id": 0,
-      "label": "game, team, match",
-      "topic_name": "Topic 0",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 111
-    },
-    {
-      "cluster_id": 4,
-      "label": "company, model, india",
-      "topic_name": "Topic 4",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 104
+      "cluster_id": 3,
+      "cluster_label": "game, team, match",
+      "article_count": 113
     },
     {
       "cluster_id": 5,
-      "label": "tax, fbr, investment",
-      "topic_name": "Topic 5",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 93
-    },
-    {
-      "cluster_id": 7,
-      "label": "pti, party, march",
-      "topic_name": "Topic 7",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 92
+      "cluster_label": "model, agent, human",
+      "article_count": 109
     },
     {
       "cluster_id": 2,
-      "label": "price, oil, rupee",
-      "topic_name": "Topic 2",
-      "topic_description": "Topic name could not be generated.",
+      "cluster_label": "police, terrorist, killed",
+      "article_count": 106
+    },
+    {
+      "cluster_id": 0,
+      "cluster_label": "tax, investment, fbr",
+      "article_count": 105
+    },
+    {
+      "cluster_id": 6,
+      "cluster_label": "price, oil, rupee",
+      "article_count": 92
+    },
+    {
+      "cluster_id": 7,
+      "cluster_label": "pti, party, government",
       "article_count": 89
     },
     {
-      "cluster_id": 3,
-      "label": "iran, trump, iranian",
-      "topic_name": "Topic 3",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 81
+      "cluster_id": 4,
+      "cluster_label": "iran, saudi, saudi arabia",
+      "article_count": 87
     },
     {
       "cluster_id": 1,
-      "label": "police, suspect, case",
-      "topic_name": "Topic 1",
-      "topic_description": "Topic name could not be generated.",
-      "article_count": 73
+      "cluster_label": "police, suspect, case",
+      "article_count": 76
     }
   ],
-  "generated_at": "2026-10-02T11:44:31.751878+00:00"
+  "sentiment_counts": {
+    "Positive": 411,
+    "Negative": 363,
+    "Neutral": 3
+  },
+  "articles_per_source": [
+    {
+      "source": "Business Recorder",
+      "articles": 232
+    },
+    {
+      "source": "Express Tribune",
+      "articles": 208
+    },
+    {
+      "source": "Geo News",
+      "articles": 182
+    },
+    {
+      "source": "Dawn",
+      "articles": 155
+    }
+  ],
+  "top_trends": [
+    {
+      "cluster_id": 0,
+      "cluster_label": "tax, investment, fbr",
+      "article_count": 1,
+      "rolling_3d": 4.33,
+      "rolling_7d": 5.14
+    },
+    {
+      "cluster_id": 6,
+      "cluster_label": "price, oil, rupee",
+      "article_count": 0,
+      "rolling_3d": 4.0,
+      "rolling_7d": 5.29
+    },
+    {
+      "cluster_id": 7,
+      "cluster_label": "pti, party, government",
+      "article_count": 5,
+      "rolling_3d": 3.67,
+      "rolling_7d": 3.71
+    },
+    {
+      "cluster_id": 2,
+      "cluster_label": "police, terrorist, killed",
+      "article_count": 5,
+      "rolling_3d": 3.67,
+      "rolling_7d": 3.71
+    },
+    {
+      "cluster_id": 1,
+      "cluster_label": "police, suspect, case",
+      "article_count": 3,
+      "rolling_3d": 3.0,
+      "rolling_7d": 3.0
+    }
+  ],
+  "emerging_topics": [],
+  "recent_cross_source_pairs": [
+    {
+      "similarity": 0.9903,
+      "source_i": "Dawn",
+      "source_j": "Business Recorder",
+      "title_i": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
+      "title_j": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
+      "url_i": "https://www.dawn.com/news/2034218/indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation",
+      "url_j": "https://www.brecorder.com/news/40442325/indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation"
+    },
+    {
+      "similarity": 0.9805,
+      "source_i": "Dawn",
+      "source_j": "Geo News",
+      "title_i": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
+      "title_j": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
+      "url_i": "https://www.dawn.com/news/2034218/indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation",
+      "url_j": "https://www.geo.tv/latest/684654-indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation"
+    },
+    {
+      "similarity": 0.9304,
+      "source_i": "Dawn",
+      "source_j": "Express Tribune",
+      "title_i": "India's Cockroach Janata Party, student groups to protest, demand poll chief's resignation",
+      "title_j": "India's Cockroach Janta Party, student groups to protest, demand poll chief's resignation",
+      "url_i": "https://www.dawn.com/news/2034218/indias-cockroach-janata-party-student-groups-to-protest-demand-poll-chiefs-resignation",
+      "url_j": "https://tribune.com.pk/story/2632574/indias-cockroach-janta-party-student-groups-to-protest-demand-poll-chiefs-resignation"
+    },
+    {
+      "similarity": 0.9267,
+      "source_i": "Dawn",
+      "source_j": "Geo News",
+      "title_i": "'Grave provocation': Pakistan condemns Houthi attack on power facility in Madina",
+      "title_j": "Pakistan slams Houthi attack on Madina power station as 'grave provocation'",
+      "url_i": "https://www.dawn.com/news/2034209/grave-provocation-pakistan-condemns-houthi-attack-on-power-facility-in-madina",
+      "url_j": "https://www.geo.tv/latest/684655-pakistan-slams-houthi-attack-on-madina-power-station-as-grave-provocation"
+    },
+    {
+      "similarity": 0.9217,
+      "source_i": "Dawn",
+      "source_j": "Geo News",
+      "title_i": "4 Pakistani crew members from hijacked oil tanker to arrive in Karachi tomorrow: DPM Dar",
+      "title_j": "Four Pakistanis rescued from hijacked tanker off Somalia to return home tomorrow",
+      "url_i": "https://www.dawn.com/news/2034247/4-pakistani-crew-members-from-hijacked-oil-tanker-to-arrive-in-karachi-tomorrow-dpm-dar",
+      "url_j": "https://www.geo.tv/latest/684707-four-pakistanis-rescued-from-hijacked-tanker-off-somalia-to-return-home-tomorrow"
+    }
+  ]
 }

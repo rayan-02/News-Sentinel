@@ -1,5 +1,18 @@
 {
-  "generated_at": "2026-10-02T11:44:32.244406+00:00",
-  "articles": 766,
-  "topics": 8
+  "generated_at": "2026-10-02T11:54:44+00:00",
+  "stats": {
+    "articles": 777,
+    "topics": 8,
+    "emerging": 0,
+    "sources": 4
+  },
+  "files": [
+    "overview.json",
+    "topics.json",
+    "trends.json",
+    "similar_stories.json",
+    "source_analysis.json",
+    "articles.json"
+  ],
+  "warnings": []
 }
