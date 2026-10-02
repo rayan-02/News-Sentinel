@@ -4,7 +4,6 @@
 
 <div id="dashboard-error" class="error" hidden></div>
 
-
 <section class="stats" id="stats">
 
     <div class="stat">
@@ -33,7 +32,6 @@
 
 </section>
 
-
 <div class="grid wide-left">
 
     <section class="card">
@@ -47,14 +45,13 @@
             Activity of the most prominent topics over time.
         </p>
 
-        <div id="trend-chart">
+        <div id="trend-chart" class="chart-container">
             <div class="empty">Loading trend data...</div>
         </div>
 
         <div id="trend-legend"></div>
 
     </section>
-
 
     <section class="card accent">
 
@@ -75,38 +72,65 @@
 
 </div>
 
-
 <div class="grid grid-2">
 
     <section class="card">
 
         <div class="card-header">
-            <h2 class="card-title">Topics at a Glance</h2>
-            <a href="/topics" class="pill">View all</a>
+            <h2 class="card-title">Articles by Source</h2>
+            <span class="card-meta">articles_ml.csv</span>
         </div>
 
-        <div id="topic-summary">
-            <div class="empty">Loading topics...</div>
+        <div id="source-distribution" class="chart-container">
+            <div class="empty">Loading source data...</div>
         </div>
 
     </section>
 
-
     <section class="card">
 
         <div class="card-header">
-            <h2 class="card-title">Sentiment Mix</h2>
-            <span class="card-meta">articles_ml.csv</span>
+            <h2 class="card-title">Articles by Topic</h2>
+            <span class="card-meta">clusters_summary.csv</span>
         </div>
 
-        <div id="sentiment-summary">
-            <div class="empty">Loading sentiment...</div>
+        <div id="topic-distribution" class="chart-container">
+            <div class="empty">Loading topic data...</div>
         </div>
 
     </section>
 
 </div>
 
+<div class="grid grid-2">
+
+    <section class="card">
+
+        <div class="card-header">
+            <h2 class="card-title">Sentiment Distribution</h2>
+            <span class="card-meta">articles_ml.csv</span>
+        </div>
+
+        <div id="sentiment-distribution" class="chart-container">
+            <div class="empty">Loading sentiment...</div>
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <div class="card-header">
+            <h2 class="card-title">Activity Over Time</h2>
+            <span class="card-meta">topic_trends.csv</span>
+        </div>
+
+        <div id="activity-timeline" class="chart-container">
+            <div class="empty">Loading timeline...</div>
+        </div>
+
+    </section>
+
+</div>
 
 <section class="card">
 
@@ -124,7 +148,6 @@
     </div>
 
 </section>
-
 
 <div class="grid wide-left">
 
@@ -145,7 +168,6 @@
 
     </section>
 
-
     <section class="card">
 
         <div class="card-header">
@@ -159,14 +181,13 @@
 
         <div class="empty">
             The RAG chatbot will be connected here later.
-        </div>
+        </p>
 
         <a href="/chat" class="pill">Open AI Chat</a>
 
     </section>
 
 </div>
-
 
 <section class="card">
 
@@ -182,7 +203,6 @@
 </section>
 
 {% endblock %}
-
 
 {% block scripts %}
 

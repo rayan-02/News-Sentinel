@@ -1,8 +1,16 @@
 import json
 import os
+import hashlib
 from datetime import datetime, timezone
 
 import pandas as pd
+
+# Try to import Google Generative AI
+try:
+    import google.generativeai as genai
+    GENAI_AVAILABLE = True
+except ImportError:
+    GENAI_AVAILABLE = False
 
 BASE_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_FOLDER = os.path.join(BASE_FOLDER, "data")
@@ -21,6 +29,121 @@ TOP_N = 5
 MAX_PAIRS = 500
 EVIDENCE_ARTICLES = 3
 DISCLAIMER = "These are measurable differences in coverage, not a verdict on whether an outlet is biased."
+
+# Cache file for topic names
+TOPIC_NAMES_CACHE = os.path.join(OUTPUT_FOLDER, "topic_names.json")
+
+
+def load_topic_names_cache():
+    """Load the topic names cache from disk."""
+    if os.path.exists(TOPIC_NAMES_CACHE):
+        try:
+            with open(TOPIC_NAMES_CACHE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load topic names cache: {e}")
+    return {}
+
+
+def save_topic_names_cache(cache):
+    """Save the topic names cache to disk."""
+    try:
+        with open(TOPIC_NAMES_CACHE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"Warning: Could not save topic names cache: {e}")
+
+
+def compute_topic_hash(cluster_data):
+    """
+    Compute a hash for the topic data to detect changes.
+    We'll use keywords, phrases, and maybe sample article titles if available.
+    For now, we use keywords and phrases from the cluster data.
+    """
+    # Create a string representation of the data we want to hash
+    hash_str = ""
+    if "top_keywords" in cluster_data:
+        hash_str += "keywords:" + ",".join(sorted(cluster_data["top_keywords"])) + "|"
+    if "top_phrases" in cluster_data:
+        hash_str += "phrases:" + ",".join(sorted(cluster_data["top_phrases"])) + "|"
+    # We could also include sample article titles, but for simplicity we stick to keywords and phrases
+    return hashlib.md5(hash_str.encode()).hexdigest()
+
+
+def get_topic_name_from_gemini(cluster_data, cache):
+    """
+    Get a human-readable topic name and description from Gemini, using caching.
+    Returns a tuple (name, description).
+    If Gemini is not available or fails, returns (None, None).
+    """
+    if not GENAI_AVAILABLE:
+        return None, None
+
+    # Check if we have a valid cached entry
+    cluster_id = str(cluster_data.get("cluster_id", ""))
+    if cluster_id in cache:
+        cached_entry = cache[cluster_id]
+        # If we have a hash, compare it to see if the data has changed
+        if "hash" in cached_entry:
+            current_hash = compute_topic_hash(cluster_data)
+            if cached_entry["hash"] == current_hash:
+                return cached_entry.get("name"), cached_entry.get("description")
+
+    # If we get here, we need to call Gemini (or use fallback)
+    try:
+        # Configure Gemini with API key from environment
+        api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            print("Warning: GEMINI_API_KEY not set in environment")
+            return None, None
+
+        genai.configure(api_key=api_key)
+
+        # Prepare the prompt
+        prompt = f"""
+        Given the following information about a news topic cluster, generate a short, human-readable topic name and a brief description (one or two sentences).
+        The name should be concise and suitable for a dashboard label.
+        The description should explain what the topic is about.
+
+        Cluster ID: {cluster_data.get('cluster_id')}
+        Keywords: {', '.join(cluster_data.get('top_keywords', []))}
+        Phrases: {', '.join(cluster_data.get('top_phrases', []))}
+        Sample article titles: {', '.join(cluster_data.get('sample_titles', [])[:3])}
+        Article count: {cluster_data.get('article_count', 0)}
+
+        Please respond in JSON format with two fields: "topic_name" and "topic_description".
+        Example: {{"topic_name": "Economy & Oil Prices", "topic_description": "Discussions about fuel prices, inflation, and economic indicators."}}
+        """
+
+        # Use the Gemini model
+        model = genai.GenerativeModel('gemini-pro')
+        response = model.generate_content(prompt)
+
+        # Try to parse the response as JSON
+        response_text = response.text.strip()
+        # Remove any markdown code block markers if present
+        if response_text.startswith("```json"):
+            response_text = response_text[7:]
+        if response_text.endswith("```"):
+            response_text = response_text[:-3]
+        response_text = response_text.strip()
+
+        result = json.loads(response_text)
+        topic_name = result.get("topic_name")
+        topic_description = result.get("topic_description")
+
+        # Update the cache
+        if cluster_id not in cache:
+            cache[cluster_id] = {}
+        cache[cluster_id]["name"] = topic_name
+        cache[cluster_id]["description"] = topic_description
+        cache[cluster_id]["hash"] = compute_topic_hash(cluster_data)
+
+        return topic_name, topic_description
+
+    except Exception as e:
+        print(f"Warning: Gemini API call failed for cluster {cluster_id}: {e}")
+        return None, None
 
 
 def load_inputs():
@@ -106,6 +229,9 @@ def build_topics(d):
     total = int(clusters["article_count"].sum())
     topics = []
 
+    # Load the topic names cache
+    cache = load_topic_names_cache()
+
     for row in records(clusters):
         members = articles[articles["cluster_id"] == row["cluster_id"]]
 
@@ -115,9 +241,30 @@ def build_topics(d):
             name, _, count = item.rpartition(":")
             sources[name] = int(count)
 
+        # Prepare cluster data for Gemini (we'll add sample article titles later if needed)
+        cluster_data = {
+            "cluster_id": row["cluster_id"],
+            "top_keywords": split_list(row["top_keywords"]),
+            "top_phrases": split_list(row["top_phrases"]),
+            # We don't have sample article titles in the cluster row, but we can get them from members
+            "sample_titles": split_list(row["sample_titles"]) if "sample_titles" in row else [],
+            "article_count": row["article_count"],
+        }
+
+        # Get human-readable name and description from Gemini (with caching)
+        topic_name, topic_description = get_topic_name_from_gemini(cluster_data, cache)
+
+        # Fallback to the ML label if Gemini didn't return a name
+        if not topic_name:
+            topic_name = row["cluster_label"]
+        if not topic_description:
+            topic_description = ""  # We can leave it empty or generate a default from keywords
+
         topics.append({
             "cluster_id": row["cluster_id"],
-            "label": row["cluster_label"],
+            "label": row["cluster_label"],  # Keep the original ML label
+            "topic_name": topic_name,
+            "topic_description": topic_description,
             "article_count": row["article_count"],
             "share_of_articles": round(row["article_count"] / total, 4) if total else 0,
             "keywords": split_list(row["top_keywords"]),
@@ -127,6 +274,9 @@ def build_topics(d):
             "sources": sources,
             "sample_articles": article_refs(members) if not members.empty else [],
         })
+
+    # Save the updated cache
+    save_topic_names_cache(cache)
 
     return {"topics": topics}
 
@@ -178,6 +328,9 @@ def build_source_analysis(d):
     result["notes"].append("Outlets with very few articles on a topic are left out, so shares may not add up to 100%.")
     sa = sa.assign(coverage_share=(sa["source_topic_articles"] / sa["topic_articles_all_sources"]).round(4))
 
+    # Load the topic names cache to get human-readable names for topics
+    cache = load_topic_names_cache()
+
     for cluster_id, group in sa.groupby("cluster_id"):
         rows = []
         for r in records(group.sort_values("coverage_share", ascending=False)):
@@ -198,12 +351,22 @@ def build_source_analysis(d):
                 "evidence": article_refs(evidence) if not evidence.empty else [],
             })
 
+        # Get the human-readable name and description for this topic from the cache
+        cluster_id_str = str(cluster_id)
+        topic_name = cache.get(cluster_id_str, {}).get("name", group["cluster_label"].iloc[0])
+        topic_description = cache.get(cluster_id_str, {}).get("description", "")
+
         result["topics"].append({
             "cluster_id": int(cluster_id),
-            "label": group["cluster_label"].iloc[0],
+            "label": group["cluster_label"].iloc[0],  # Keep the original ML label
+            "topic_name": topic_name,
+            "topic_description": topic_description,
             "topic_articles": int(group["topic_articles_all_sources"].iloc[0]),
             "sources": rows,
         })
+
+    # Save the updated cache (though we didn't modify it in this function, we might have read it)
+    save_topic_names_cache(cache)
 
     return result
 

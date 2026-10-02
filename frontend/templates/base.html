@@ -7,78 +7,86 @@
     <title>{{ titles[page] }} · News Sentinel</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body>
+<body data-page="{{ page }}">
 
-<header class="topbar">
+<div class="app-shell">
 
-    <div class="brand-header">
-        <h1>News <span>Sentinel</span></h1>
-        <p>Pakistani news intelligence</p>
-    </div>
-
-    <div class="header-meta">
-        <div class="location-label">
-            news-sentinel / {{ page }}
-        </div>
-
-        {% if updated %}
-        <div class="updated">
-            data updated {{ updated }} UTC
-        </div>
-        {% endif %}
-    </div>
-
-</header>
-
-
-<div class="layout">
-
+    <!-- SIDEBAR -->
     <aside class="sidebar">
 
-        <div class="sidebar-title">
-            News Sentinel
+        <div class="brand">
+            <div class="brand-mark">NS</div>
+            <div>
+                <strong>News Sentinel</strong>
+                <small>Pakistani news intelligence</small>
+            </div>
         </div>
 
-        <nav>
+        <nav class="sidebar-nav">
 
-            {% for key, label, url in nav %}
-
+            {% for nav_item in nav %}
+            {% set index = loop.index %}
             <a
-                href="{{ url }}"
-                class="nav-link {% if key == page %}active{% endif %}"
+                href="{{ nav_item[2] }}"
+                class="nav-link {% if nav_item[0] == page %}active{% endif %}"
             >
-
-                <span class="nav-number">
-                    {{ "%02d"|format(loop.index) }}
-                </span>
-
+                <span class="nav-index">{{ "%02d"|format(index) }}</span>
                 <span>
-                    {{ label }}
+                    {{ nav_item[1] }}
                 </span>
-
             </a>
-
             {% endfor %}
 
         </nav>
 
+        <div class="sidebar-footer">
+            <div class="status-dot" title="Data pipeline healthy"></div>
+            <span>System online</span>
+        </div>
+
     </aside>
 
+    <!-- PAGE -->
+    <div class="page-shell">
 
-    <main class="main-content">
+        <!-- TOPBAR -->
+        <header class="topbar">
 
-        {% block content %}
-        {% endblock %}
+            <div class="topbar-meta">
+                <div class="location-label">
+                    news-sentinel / {{ page }}
+                </div>
 
-    </main>
+                {% if updated %}
+                <div class="updated">
+                    data updated {{ updated }} UTC
+                </div>
+                {% endif %}
+
+                <span class="live-badge">
+                    <i></span>
+                    live
+                </span>
+            </div>
+
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+
+            {% block content %}
+            {% endblock %}
+
+        </div>
+
+    </div>
 
 </div>
-
 
 <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
 
